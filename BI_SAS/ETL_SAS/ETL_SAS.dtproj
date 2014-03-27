@@ -142,19 +142,24 @@
       <FullPath>SAS_Regional_DimMoneda.dtsx</FullPath>
       <References />
     </DtsPackage>
-    <DtsPackage FormatVersion="0">
+    <DtsPackage FormatVersion="3">
       <Name>SAS_Regional_DimPlan.dtsx</Name>
       <FullPath>SAS_Regional_DimPlan.dtsx</FullPath>
       <References />
     </DtsPackage>
-    <DtsPackage FormatVersion="0">
+    <DtsPackage FormatVersion="3">
       <Name>SAS_Regional_DimSocios.dtsx</Name>
       <FullPath>SAS_Regional_DimSocios.dtsx</FullPath>
       <References />
     </DtsPackage>
-    <DtsPackage FormatVersion="0">
+    <DtsPackage FormatVersion="3">
       <Name>SAS_Regional_DimSucursal.dtsx</Name>
       <FullPath>SAS_Regional_DimSucursal.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>SAS_Regional_DimUsuario.dtsx</Name>
+      <FullPath>SAS_Regional_DimUsuario.dtsx</FullPath>
       <References />
     </DtsPackage>
   </DTSPackages>
