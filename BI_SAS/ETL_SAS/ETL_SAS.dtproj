@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProductVersion>10.50.1600.1</ProductVersion>
+  <SchemaVersion>9.0.1.0</SchemaVersion>
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD5mYWxzZTwvRW5hYmxlZD4NCiAgPFByb2plY3ROYW1lPjwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPjwvUHJvdmlkZXI+DQo8L1NvdXJjZUNvbnRyb2xJbmZvPg==</State>
+  <Database>
+    <Name>ETL_SAS.database</Name>
+    <FullPath>ETL_SAS.database</FullPath>
+  </Database>
+  <Cubes />
+  <Dimensions />
+  <DataSources />
+  <DataSourceViews />
+  <MiningModels />
+  <Roles />
+  <Miscellaneous />
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <OutputPath>bin</OutputPath>
+        <ConnectionMappings />
+        <ConnectionProviderMappings />
+        <ConnectionSecurityMappings />
+        <DatabaseStorageLocations />
+      </Options>
+    </Configuration>
+  </Configurations>
+  <DTSPackages>
+    <DtsPackage FormatVersion="3">
+      <Name>DimPais.dtsx</Name>
+      <FullPath>DimPais.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>DimPoliza.dtsx</Name>
+      <FullPath>DimPoliza.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>DimPolizaPadre.dtsx</Name>
+      <FullPath>DimPolizaPadre.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>DimSucursal.dtsx</Name>
+      <FullPath>DimSucursal.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>DimUbicacionGeograficaCliente.dtsx</Name>
+      <FullPath>DimUbicacionGeograficaCliente.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>DimUbicacionGeograficaSucursal.dtsx</Name>
+      <FullPath>DimUbicacionGeograficaSucursal.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>FactPoliza.dtsx</Name>
+      <FullPath>FactPoliza.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Package 12.dtsx</Name>
+      <FullPath>Package 12.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SAS_Local_DimFechaBaja.dtsx</Name>
+      <FullPath>SAS_Local_DimFechaBaja.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SAS_Local_DimFechaFinVigencia.dtsx</Name>
+      <FullPath>SAS_Local_DimFechaFinVigencia.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SAS_Local_DimFechaInicioVigencia.dtsx</Name>
+      <FullPath>SAS_Local_DimFechaInicioVigencia.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SAS_Local_DimFechaInscripcion.dtsx</Name>
+      <FullPath>SAS_Local_DimFechaInscripcion.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SAS_Local_DimFechaNacimiento.dtsx</Name>
+      <FullPath>SAS_Local_DimFechaNacimiento.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SAS_Regional_DimFechaBaja.dtsx</Name>
+      <FullPath>SAS_Regional_DimFechaBaja.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SAS_Regional_DimFechaFinVigencia.dtsx</Name>
+      <FullPath>SAS_Regional_DimFechaFinVigencia.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SAS_Regional_DimFechaInicioVigencia.dtsx</Name>
+      <FullPath>SAS_Regional_DimFechaInicioVigencia.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SAS_Regional_DimFechaInscripcion.dtsx</Name>
+      <FullPath>SAS_Regional_DimFechaInscripcion.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SAS_Regional_DimFechaNacimiento.dtsx</Name>
+      <FullPath>SAS_Regional_DimFechaNacimiento.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SAS_Regional_DimCIA.dtsx</Name>
+      <FullPath>SAS_Regional_DimCIA.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SAS_Regional_DimFechaRenovacion.dtsx</Name>
+      <FullPath>SAS_Regional_DimFechaRenovacion.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SAS_Regional_DimTer.dtsx</Name>
+      <FullPath>SAS_Regional_DimTer.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SAS_Local_DimTer.dtsx</Name>
+      <FullPath>SAS_Local_DimTer.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SAS_Regional_DimMoneda.dtsx</Name>
+      <FullPath>SAS_Regional_DimMoneda.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>SAS_Regional_DimPlan.dtsx</Name>
+      <FullPath>SAS_Regional_DimPlan.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>SAS_Regional_DimSocios.dtsx</Name>
+      <FullPath>SAS_Regional_DimSocios.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>SAS_Regional_DimSucursal.dtsx</Name>
+      <FullPath>SAS_Regional_DimSucursal.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+  </DTSPackages>
+</Project>
