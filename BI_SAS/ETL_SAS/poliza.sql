@@ -11,14 +11,16 @@ INNER JOIN [dbo].[master_cod] as codTip
 LEFT JOIN [dbo].[master_cod] as codForPa
 	ON pol.[id_formpago]=codTip.id 
 	AND codTip.sinonimo = 'FORMPAGO'
-WHERE [parentid] is not null or [numecert] is not null
-order by [parentid] desc
+LEFT JOIN [dbo].[master_cod] as codCTA
+	ON pol.[id_tipocta]=codCTA.id 
+	AND codCTA.sinonimo = 'TIPOCTA'
+
 
 
 
 SELECT *
 FROM  [dbo].[master_cod]
-where sinonimo like '%CTA%'
+where sinonimo like '%TIPOCTA%'
 
 select *
 from [dbo].[master_pol]
