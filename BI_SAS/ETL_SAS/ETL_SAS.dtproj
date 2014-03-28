@@ -93,6 +93,16 @@
       <References />
     </DtsPackage>
     <DtsPackage FormatVersion="3">
+      <Name>SAS_Local_DimTer.dtsx</Name>
+      <FullPath>SAS_Local_DimTer.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SAS_Regional_DimCIA.dtsx</Name>
+      <FullPath>SAS_Regional_DimCIA.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
       <Name>SAS_Regional_DimFechaBaja.dtsx</Name>
       <FullPath>SAS_Regional_DimFechaBaja.dtsx</FullPath>
       <References />
@@ -118,23 +128,8 @@
       <References />
     </DtsPackage>
     <DtsPackage FormatVersion="3">
-      <Name>SAS_Regional_DimCIA.dtsx</Name>
-      <FullPath>SAS_Regional_DimCIA.dtsx</FullPath>
-      <References />
-    </DtsPackage>
-    <DtsPackage FormatVersion="3">
       <Name>SAS_Regional_DimFechaRenovacion.dtsx</Name>
       <FullPath>SAS_Regional_DimFechaRenovacion.dtsx</FullPath>
-      <References />
-    </DtsPackage>
-    <DtsPackage FormatVersion="3">
-      <Name>SAS_Regional_DimTer.dtsx</Name>
-      <FullPath>SAS_Regional_DimTer.dtsx</FullPath>
-      <References />
-    </DtsPackage>
-    <DtsPackage FormatVersion="3">
-      <Name>SAS_Local_DimTer.dtsx</Name>
-      <FullPath>SAS_Local_DimTer.dtsx</FullPath>
       <References />
     </DtsPackage>
     <DtsPackage FormatVersion="3">
@@ -157,9 +152,24 @@
       <FullPath>SAS_Regional_DimSucursal.dtsx</FullPath>
       <References />
     </DtsPackage>
-    <DtsPackage FormatVersion="0">
+    <DtsPackage FormatVersion="3">
+      <Name>SAS_Regional_DimTer.dtsx</Name>
+      <FullPath>SAS_Regional_DimTer.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
       <Name>SAS_Regional_DimUsuario.dtsx</Name>
       <FullPath>SAS_Regional_DimUsuario.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SAS_Regional_DimUbicacionGeograficaCliente.dtsx</Name>
+      <FullPath>SAS_Regional_DimUbicacionGeograficaCliente.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>SAS_Regional_TMPUbicacionGeografica.dtsx</Name>
+      <FullPath>SAS_Regional_TMPUbicacionGeografica.dtsx</FullPath>
       <References />
     </DtsPackage>
   </DTSPackages>
