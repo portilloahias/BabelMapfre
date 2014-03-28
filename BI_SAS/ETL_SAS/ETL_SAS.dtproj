@@ -158,13 +158,18 @@
       <References />
     </DtsPackage>
     <DtsPackage FormatVersion="3">
-      <Name>SAS_Regional_DimUsuario.dtsx</Name>
-      <FullPath>SAS_Regional_DimUsuario.dtsx</FullPath>
+      <Name>SAS_Regional_DimUbicacionGeograficaCliente.dtsx</Name>
+      <FullPath>SAS_Regional_DimUbicacionGeograficaCliente.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>SAS_Regional_DimUbicacionGeograficaSucursal.dtsx</Name>
+      <FullPath>SAS_Regional_DimUbicacionGeograficaSucursal.dtsx</FullPath>
       <References />
     </DtsPackage>
     <DtsPackage FormatVersion="3">
-      <Name>SAS_Regional_DimUbicacionGeograficaCliente.dtsx</Name>
-      <FullPath>SAS_Regional_DimUbicacionGeograficaCliente.dtsx</FullPath>
+      <Name>SAS_Regional_DimUsuario.dtsx</Name>
+      <FullPath>SAS_Regional_DimUsuario.dtsx</FullPath>
       <References />
     </DtsPackage>
     <DtsPackage FormatVersion="0">
