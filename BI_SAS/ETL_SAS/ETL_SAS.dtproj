@@ -28,36 +28,6 @@
   </Configurations>
   <DTSPackages>
     <DtsPackage FormatVersion="3">
-      <Name>DimPais.dtsx</Name>
-      <FullPath>DimPais.dtsx</FullPath>
-      <References />
-    </DtsPackage>
-    <DtsPackage FormatVersion="3">
-      <Name>DimPoliza.dtsx</Name>
-      <FullPath>DimPoliza.dtsx</FullPath>
-      <References />
-    </DtsPackage>
-    <DtsPackage FormatVersion="3">
-      <Name>DimPolizaPadre.dtsx</Name>
-      <FullPath>DimPolizaPadre.dtsx</FullPath>
-      <References />
-    </DtsPackage>
-    <DtsPackage FormatVersion="3">
-      <Name>DimSucursal.dtsx</Name>
-      <FullPath>DimSucursal.dtsx</FullPath>
-      <References />
-    </DtsPackage>
-    <DtsPackage FormatVersion="3">
-      <Name>DimUbicacionGeograficaCliente.dtsx</Name>
-      <FullPath>DimUbicacionGeograficaCliente.dtsx</FullPath>
-      <References />
-    </DtsPackage>
-    <DtsPackage FormatVersion="3">
-      <Name>DimUbicacionGeograficaSucursal.dtsx</Name>
-      <FullPath>DimUbicacionGeograficaSucursal.dtsx</FullPath>
-      <References />
-    </DtsPackage>
-    <DtsPackage FormatVersion="3">
       <Name>FactPoliza.dtsx</Name>
       <FullPath>FactPoliza.dtsx</FullPath>
       <References />
@@ -175,6 +145,11 @@
     <DtsPackage FormatVersion="0">
       <Name>SAS_Regional_TMPUbicacionGeografica.dtsx</Name>
       <FullPath>SAS_Regional_TMPUbicacionGeografica.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>SAS_Regional_DimPoliza.dtsx</Name>
+      <FullPath>SAS_Regional_DimPoliza.dtsx</FullPath>
       <References />
     </DtsPackage>
   </DTSPackages>
