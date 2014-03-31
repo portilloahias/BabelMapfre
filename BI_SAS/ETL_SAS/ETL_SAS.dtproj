@@ -28,16 +28,6 @@
   </Configurations>
   <DTSPackages>
     <DtsPackage FormatVersion="3">
-      <Name>FactPoliza.dtsx</Name>
-      <FullPath>FactPoliza.dtsx</FullPath>
-      <References />
-    </DtsPackage>
-    <DtsPackage FormatVersion="3">
-      <Name>Package 12.dtsx</Name>
-      <FullPath>Package 12.dtsx</FullPath>
-      <References />
-    </DtsPackage>
-    <DtsPackage FormatVersion="3">
       <Name>SAS_Local_DimFechaBaja.dtsx</Name>
       <FullPath>SAS_Local_DimFechaBaja.dtsx</FullPath>
       <References />
