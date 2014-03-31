@@ -142,5 +142,15 @@
       <FullPath>SAS_Regional_DimPoliza.dtsx</FullPath>
       <References />
     </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>SAS_Regional_FactPoliza_2.dtsx</Name>
+      <FullPath>SAS_Regional_FactPoliza_2.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>SAS_Regional_FactPoliza.dtsx</Name>
+      <FullPath>SAS_Regional_FactPoliza.dtsx</FullPath>
+      <References />
+    </DtsPackage>
   </DTSPackages>
 </Project>
