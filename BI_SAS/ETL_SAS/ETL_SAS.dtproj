@@ -103,6 +103,11 @@
       <References />
     </DtsPackage>
     <DtsPackage FormatVersion="3">
+      <Name>SAS_Regional_DimPoliza.dtsx</Name>
+      <FullPath>SAS_Regional_DimPoliza.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
       <Name>SAS_Regional_DimSocios.dtsx</Name>
       <FullPath>SAS_Regional_DimSocios.dtsx</FullPath>
       <References />
@@ -122,7 +127,7 @@
       <FullPath>SAS_Regional_DimUbicacionGeograficaCliente.dtsx</FullPath>
       <References />
     </DtsPackage>
-    <DtsPackage FormatVersion="0">
+    <DtsPackage FormatVersion="3">
       <Name>SAS_Regional_DimUbicacionGeograficaSucursal.dtsx</Name>
       <FullPath>SAS_Regional_DimUbicacionGeograficaSucursal.dtsx</FullPath>
       <References />
@@ -132,24 +137,19 @@
       <FullPath>SAS_Regional_DimUsuario.dtsx</FullPath>
       <References />
     </DtsPackage>
-    <DtsPackage FormatVersion="0">
-      <Name>SAS_Regional_TMPUbicacionGeografica.dtsx</Name>
-      <FullPath>SAS_Regional_TMPUbicacionGeografica.dtsx</FullPath>
+    <DtsPackage FormatVersion="3">
+      <Name>SAS_Regional_FactPoliza.dtsx</Name>
+      <FullPath>SAS_Regional_FactPoliza.dtsx</FullPath>
       <References />
     </DtsPackage>
-    <DtsPackage FormatVersion="0">
-      <Name>SAS_Regional_DimPoliza.dtsx</Name>
-      <FullPath>SAS_Regional_DimPoliza.dtsx</FullPath>
-      <References />
-    </DtsPackage>
-    <DtsPackage FormatVersion="0">
+    <DtsPackage FormatVersion="3">
       <Name>SAS_Regional_FactPoliza_2.dtsx</Name>
       <FullPath>SAS_Regional_FactPoliza_2.dtsx</FullPath>
       <References />
     </DtsPackage>
-    <DtsPackage FormatVersion="0">
-      <Name>SAS_Regional_FactPoliza.dtsx</Name>
-      <FullPath>SAS_Regional_FactPoliza.dtsx</FullPath>
+    <DtsPackage FormatVersion="3">
+      <Name>SAS_Regional_TMPUbicacionGeografica.dtsx</Name>
+      <FullPath>SAS_Regional_TMPUbicacionGeografica.dtsx</FullPath>
       <References />
     </DtsPackage>
   </DTSPackages>
