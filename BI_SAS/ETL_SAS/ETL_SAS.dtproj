@@ -138,11 +138,6 @@
       <References />
     </DtsPackage>
     <DtsPackage FormatVersion="3">
-      <Name>SAS_Regional_FactPoliza.dtsx</Name>
-      <FullPath>SAS_Regional_FactPoliza.dtsx</FullPath>
-      <References />
-    </DtsPackage>
-    <DtsPackage FormatVersion="3">
       <Name>SAS_Regional_FactPoliza_2.dtsx</Name>
       <FullPath>SAS_Regional_FactPoliza_2.dtsx</FullPath>
       <References />
@@ -150,6 +145,11 @@
     <DtsPackage FormatVersion="3">
       <Name>SAS_Regional_TMPUbicacionGeografica.dtsx</Name>
       <FullPath>SAS_Regional_TMPUbicacionGeografica.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>SAS_Regional_FactorCambio.dtsx</Name>
+      <FullPath>SAS_Regional_FactorCambio.dtsx</FullPath>
       <References />
     </DtsPackage>
   </DTSPackages>
