@@ -62,9 +62,19 @@
       <FullPath>SAS_Regional_DimCIA.dtsx</FullPath>
       <References />
     </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>SAS_Regional_DimFechaAnulacionRecibo.dtsx</Name>
+      <FullPath>SAS_Regional_DimFechaAnulacionRecibo.dtsx</FullPath>
+      <References />
+    </DtsPackage>
     <DtsPackage FormatVersion="3">
       <Name>SAS_Regional_DimFechaBaja.dtsx</Name>
       <FullPath>SAS_Regional_DimFechaBaja.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>SAS_Regional_DimFechaCobroRecibo.dtsx</Name>
+      <FullPath>SAS_Regional_DimFechaCobroRecibo.dtsx</FullPath>
       <References />
     </DtsPackage>
     <DtsPackage FormatVersion="3">
@@ -90,6 +100,11 @@
     <DtsPackage FormatVersion="3">
       <Name>SAS_Regional_DimFechaRenovacion.dtsx</Name>
       <FullPath>SAS_Regional_DimFechaRenovacion.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>SAS_Regional_DimFechaVencimientoRecibo.dtsx</Name>
+      <FullPath>SAS_Regional_DimFechaVencimientoRecibo.dtsx</FullPath>
       <References />
     </DtsPackage>
     <DtsPackage FormatVersion="3">
@@ -137,6 +152,11 @@
       <FullPath>SAS_Regional_DimUsuario.dtsx</FullPath>
       <References />
     </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>SAS_Regional_FactorCambio.dtsx</Name>
+      <FullPath>SAS_Regional_FactorCambio.dtsx</FullPath>
+      <References />
+    </DtsPackage>
     <DtsPackage FormatVersion="3">
       <Name>SAS_Regional_FactPoliza_2.dtsx</Name>
       <FullPath>SAS_Regional_FactPoliza_2.dtsx</FullPath>
@@ -145,11 +165,6 @@
     <DtsPackage FormatVersion="3">
       <Name>SAS_Regional_TMPUbicacionGeografica.dtsx</Name>
       <FullPath>SAS_Regional_TMPUbicacionGeografica.dtsx</FullPath>
-      <References />
-    </DtsPackage>
-    <DtsPackage FormatVersion="0">
-      <Name>SAS_Regional_FactorCambio.dtsx</Name>
-      <FullPath>SAS_Regional_FactorCambio.dtsx</FullPath>
       <References />
     </DtsPackage>
   </DTSPackages>
