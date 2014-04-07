@@ -3,13 +3,34 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{D183A3D8-5FD8-494B-B014-37F57B35E655}") = "ETL_SAS", "ETL_SAS\ETL_SAS.dtproj", "{06B56DB3-3412-4CD1-A9D3-671B819746FF}"
 EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "SAS_Report", "SAS_Report\SAS_Report.rptproj", "{F8C01013-B833-4EC9-98EF-D0475268EEB1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
 		Development|Default = Development|Default
+		Release|Default = Release|Default
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06B56DB3-3412-4CD1-A9D3-671B819746FF}.Debug|Default.ActiveCfg = Development
+		{06B56DB3-3412-4CD1-A9D3-671B819746FF}.Debug|Default.Build.0 = Development
+		{06B56DB3-3412-4CD1-A9D3-671B819746FF}.DebugLocal|Default.ActiveCfg = Development
+		{06B56DB3-3412-4CD1-A9D3-671B819746FF}.DebugLocal|Default.Build.0 = Development
 		{06B56DB3-3412-4CD1-A9D3-671B819746FF}.Development|Default.ActiveCfg = Development
 		{06B56DB3-3412-4CD1-A9D3-671B819746FF}.Development|Default.Build.0 = Development
+		{06B56DB3-3412-4CD1-A9D3-671B819746FF}.Release|Default.ActiveCfg = Development
+		{06B56DB3-3412-4CD1-A9D3-671B819746FF}.Release|Default.Build.0 = Development
+		{F8C01013-B833-4EC9-98EF-D0475268EEB1}.Debug|Default.ActiveCfg = Debug
+		{F8C01013-B833-4EC9-98EF-D0475268EEB1}.Debug|Default.Build.0 = DebugLocal
+		{F8C01013-B833-4EC9-98EF-D0475268EEB1}.Debug|Default.Deploy.0 = DebugLocal
+		{F8C01013-B833-4EC9-98EF-D0475268EEB1}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{F8C01013-B833-4EC9-98EF-D0475268EEB1}.DebugLocal|Default.Build.0 = DebugLocal
+		{F8C01013-B833-4EC9-98EF-D0475268EEB1}.Development|Default.ActiveCfg = DebugLocal
+		{F8C01013-B833-4EC9-98EF-D0475268EEB1}.Development|Default.Build.0 = DebugLocal
+		{F8C01013-B833-4EC9-98EF-D0475268EEB1}.Release|Default.ActiveCfg = Release
+		{F8C01013-B833-4EC9-98EF-D0475268EEB1}.Release|Default.Build.0 = Release
+		{F8C01013-B833-4EC9-98EF-D0475268EEB1}.Release|Default.Deploy.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
