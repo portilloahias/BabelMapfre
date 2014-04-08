@@ -142,5 +142,10 @@
       <FullPath>SAS_Regional_TMPUbicacionGeografica.dtsx</FullPath>
       <References />
     </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>SAS_Regional_DimRecibo.dtsx</Name>
+      <FullPath>SAS_Regional_DimRecibo.dtsx</FullPath>
+      <References />
+    </DtsPackage>
   </DTSPackages>
 </Project>
