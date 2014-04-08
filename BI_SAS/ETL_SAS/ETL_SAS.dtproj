@@ -92,6 +92,11 @@
       <FullPath>SAS_Regional_DimPoliza.dtsx</FullPath>
       <References />
     </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>SAS_Regional_DimRecibo.dtsx</Name>
+      <FullPath>SAS_Regional_DimRecibo.dtsx</FullPath>
+      <References />
+    </DtsPackage>
     <DtsPackage FormatVersion="3">
       <Name>SAS_Regional_DimSocios.dtsx</Name>
       <FullPath>SAS_Regional_DimSocios.dtsx</FullPath>
@@ -143,8 +148,8 @@
       <References />
     </DtsPackage>
     <DtsPackage FormatVersion="0">
-      <Name>SAS_Regional_DimRecibo.dtsx</Name>
-      <FullPath>SAS_Regional_DimRecibo.dtsx</FullPath>
+      <Name>SAS_Regional_FactRecibo.dtsx</Name>
+      <FullPath>SAS_Regional_FactRecibo.dtsx</FullPath>
       <References />
     </DtsPackage>
   </DTSPackages>
