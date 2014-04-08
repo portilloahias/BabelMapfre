@@ -28,36 +28,6 @@
   </Configurations>
   <DTSPackages>
     <DtsPackage FormatVersion="3">
-      <Name>SAS_Local_DimFechaBaja.dtsx</Name>
-      <FullPath>SAS_Local_DimFechaBaja.dtsx</FullPath>
-      <References />
-    </DtsPackage>
-    <DtsPackage FormatVersion="3">
-      <Name>SAS_Local_DimFechaFinVigencia.dtsx</Name>
-      <FullPath>SAS_Local_DimFechaFinVigencia.dtsx</FullPath>
-      <References />
-    </DtsPackage>
-    <DtsPackage FormatVersion="3">
-      <Name>SAS_Local_DimFechaInicioVigencia.dtsx</Name>
-      <FullPath>SAS_Local_DimFechaInicioVigencia.dtsx</FullPath>
-      <References />
-    </DtsPackage>
-    <DtsPackage FormatVersion="3">
-      <Name>SAS_Local_DimFechaInscripcion.dtsx</Name>
-      <FullPath>SAS_Local_DimFechaInscripcion.dtsx</FullPath>
-      <References />
-    </DtsPackage>
-    <DtsPackage FormatVersion="3">
-      <Name>SAS_Local_DimFechaNacimiento.dtsx</Name>
-      <FullPath>SAS_Local_DimFechaNacimiento.dtsx</FullPath>
-      <References />
-    </DtsPackage>
-    <DtsPackage FormatVersion="3">
-      <Name>SAS_Local_DimTer.dtsx</Name>
-      <FullPath>SAS_Local_DimTer.dtsx</FullPath>
-      <References />
-    </DtsPackage>
-    <DtsPackage FormatVersion="3">
       <Name>SAS_Regional_DimCIA.dtsx</Name>
       <FullPath>SAS_Regional_DimCIA.dtsx</FullPath>
       <References />
