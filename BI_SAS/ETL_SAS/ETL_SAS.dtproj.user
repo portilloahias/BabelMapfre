@@ -4,7 +4,6 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
-        <CreateDeploymentUtility>true</CreateDeploymentUtility>
         <UserIDs />
         <UserPasswords />
         <OfflineMode>false</OfflineMode>

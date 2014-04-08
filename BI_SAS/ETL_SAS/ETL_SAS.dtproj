@@ -132,14 +132,14 @@
       <FullPath>SAS_Regional_FactPoliza.dtsx</FullPath>
       <References />
     </DtsPackage>
-    <DtsPackage FormatVersion="3">
-      <Name>SAS_Regional_TMPUbicacionGeografica.dtsx</Name>
-      <FullPath>SAS_Regional_TMPUbicacionGeografica.dtsx</FullPath>
-      <References />
-    </DtsPackage>
     <DtsPackage FormatVersion="0">
       <Name>SAS_Regional_Orquestador.dtsx</Name>
       <FullPath>SAS_Regional_Orquestador.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SAS_Regional_TMPUbicacionGeografica.dtsx</Name>
+      <FullPath>SAS_Regional_TMPUbicacionGeografica.dtsx</FullPath>
       <References />
     </DtsPackage>
   </DTSPackages>
