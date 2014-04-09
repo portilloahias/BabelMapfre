@@ -2,10 +2,10 @@ DECLARE @fechaInicio datetime;
 DECLARE @fechaInicioIncripcion int;
 DECLARE @fechaFinInscripcion int;
 DECLARE @MesesAnalisis int;
-DECLARE @Cia int;
-DECLARE @Socio int;
-DECLARE @Ramo int;
-DECLARE @Producto int;
+DECLARE @IdCia int;
+DECLARE @IdSocio int;
+DECLARE @CodigoRamo varchar(50);
+DECLARE @CodigoProducto varchar(50);
 
 
 SET  @fechaInicio=getdate();
@@ -20,28 +20,44 @@ SET  @fechaInicioIncripcion = CONVERT(int, (LEFT(CONVERT(VARCHAR(10),  DATEADD(M
 SET  @fechaFinInscripcion =   CONVERT(VARCHAR(10),DATEADD(day,-1,CONVERT(datetime,CONVERT(VARCHAR(10),@fechaInicioIncripcion))),112)
 
 --Definir Filtros de Poliza por CIA, SOCIO, Ramo, Producto
-CREATE TABLE #tmpFiltros (IdCia int,
-                          IdSocio int,
-						  IdPlan int);
+
+--Filtrar los planes.
+CREATE TABLE #tmpFiltroPlan (IdPlan int);
+INSERT INTO #tmpFiltroPlan(IdPlan)
+SELECT 	IdPlan
+FROM  [dbo].[DimPlan]  as pln
+INNER JOIN 	[dbo].[DimCia]	as cia
+	ON cia.[IdCia]=@IdCia 
+	AND pln.[CodigoCIA] = cia.[CodigoCIA]
+WHERE (pln.[CodigoRamo] = @CodigoRamo OR  @CodigoRamo='ND') AND
+      (pln.[CodigoProducto] =@CodigoProducto OR @CodigoProducto='ND');
 
 
+--Filtrar los socios
+CREATE TABLE #tmpFiltroSocio (IdSocio int);
+SELECT [IdSocio]
+FROM [dbo].[DimSocio] as sci
+INNER JOIN 	[dbo].[DimCia]	as cia
+	ON cia.[IdCia]=@IdCia 
+	AND sci.[CodigoCIA] = cia.[CodigoCIA]
+WHERE ([IdSocio]=@IdSocio OR @IdSocio=-1);
 
 --Consultar polizas que fueron dadas de alta en el periodo indicado.
 CREATE TABLE #tmpPolizasInscritas (idpoliza int,
                                    idFechaBaja int);
 
+
+--********************************************************************************************
+--********************************************************************************************
 --Insertar la polizas que fueron inscritas en el periodo definido.
 INSERT INTO #tmpPolizasInscritas (idpoliza,idFechaBaja)
 SELECT 
 FROM  [dbo].[FactPoliza] as pol
-INNER JOIN
+WHERE pol.[IdCia]=@IdCia  
+AND pol.[IdFechaInscripcion]  BETWEEN 	@fechaInicioIncripcion AND	 @fechaFinInscripcion;
+
+--
 
 
 
-
-select 	 @fechaInicioIncripcion,@fechaFinInscripcion;
-
---Calcular fecha de inicio de polizas a analizar.
---SELECT 
---FROM [dbo].[FactPoliza]
---WHERE 
+											
