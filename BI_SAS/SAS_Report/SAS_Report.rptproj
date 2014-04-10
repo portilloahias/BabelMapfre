@@ -16,6 +16,14 @@
       <Name>dsSocio.rsd</Name>
       <FullPath>dsSocio.rsd</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>dsRamos.rsd</Name>
+      <FullPath>dsRamos.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>dsProducto.rsd</Name>
+      <FullPath>dsProducto.rsd</FullPath>
+    </ProjectItem>
   </DataSets>
   <Reports>
     <ProjectItem>

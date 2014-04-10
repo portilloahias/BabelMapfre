@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition">
+  <DataSet Name="">
+    <Query>
+      <DataSourceReference>SAS_DW</DataSourceReference>
+      <CommandText>SELECT        'ND' AS CodigoRamo, 'Todos' AS DescripcionRamo, IdCia
+FROM            DimCia AS cia
+WHERE        (IdCia &gt; 0)
+UNION ALL
+SELECT DISTINCT pln.CodigoRamo, pln.DescripcionRamo, cia.IdCia
+FROM            DimPlan AS pln INNER JOIN
+                         DimCia AS cia ON pln.CodigoCIA = cia.CodigoCia</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="CodigoRamo">
+        <DataField>CodigoRamo</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="DescripcionRamo">
+        <DataField>DescripcionRamo</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="IdCia">
+        <DataField>IdCia</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

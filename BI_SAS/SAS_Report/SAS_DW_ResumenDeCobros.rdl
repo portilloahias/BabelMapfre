@@ -45,6 +45,73 @@
         </Filter>
       </Filters>
     </DataSet>
+    <DataSet Name="dsRamos">
+      <SharedDataSet>
+        <SharedDataSetReference>dsRamos</SharedDataSetReference>
+      </SharedDataSet>
+      <Fields>
+        <Field Name="CodigoRamo">
+          <DataField>CodigoRamo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DescripcionRamo">
+          <DataField>DescripcionRamo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IdCia">
+          <DataField>IdCia</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+      <Filters>
+        <Filter>
+          <FilterExpression>=Fields!IdCia.Value</FilterExpression>
+          <Operator>Equal</Operator>
+          <FilterValues>
+            <FilterValue>=Parameters!CIA.Value</FilterValue>
+          </FilterValues>
+        </Filter>
+      </Filters>
+    </DataSet>
+    <DataSet Name="dsProducto">
+      <SharedDataSet>
+        <SharedDataSetReference>dsProducto</SharedDataSetReference>
+      </SharedDataSet>
+      <Fields>
+        <Field Name="CodigoRamo">
+          <DataField>CodigoRamo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CodigoProducto">
+          <DataField>CodigoProducto</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DescripcionProducto">
+          <DataField>DescripcionProducto</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IdCia">
+          <DataField>IdCia</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+      <Filters>
+        <Filter>
+          <FilterExpression>=Fields!IdCia.Value</FilterExpression>
+          <Operator>Equal</Operator>
+          <FilterValues>
+            <FilterValue>=Parameters!CIA.Value</FilterValue>
+          </FilterValues>
+        </Filter>
+        <Filter>
+          <FilterExpression>=Fields!CodigoRamo.Value</FilterExpression>
+          <Operator>Equal</Operator>
+          <FilterValues>
+            <FilterValue>=Parameters!CodigoRamo.Value</FilterValue>
+          </FilterValues>
+        </Filter>
+      </Filters>
+    </DataSet>
   </DataSets>
   <ReportSections>
     <ReportSection>
@@ -258,6 +325,38 @@
           <DataSetName>dsSocio</DataSetName>
           <ValueField>IdSocio</ValueField>
           <LabelField>Socio</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="CodigoRamo">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>="ND"</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Ramo</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>dsRamos</DataSetName>
+          <ValueField>CodigoRamo</ValueField>
+          <LabelField>DescripcionRamo</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="CodigoProducto">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>="ND"</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Producto</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>dsProducto</DataSetName>
+          <ValueField>CodigoProducto</ValueField>
+          <LabelField>DescripcionProducto</LabelField>
         </DataSetReference>
       </ValidValues>
     </ReportParameter>
