@@ -51,8 +51,13 @@ CREATE TABLE #tmpPolizasInscritas (idpoliza int,
 --********************************************************************************************
 --Insertar la polizas que fueron inscritas en el periodo definido.
 INSERT INTO #tmpPolizasInscritas (idpoliza,idFechaBaja)
-SELECT 
+SELECT 	[IdPoliza],
+        [IdFechaBaja]
 FROM  [dbo].[FactPoliza] as pol
+INNER JOIN 	  #tmpFiltroSocio as soc
+	ON pol.[IdSocio]= soc.IdSocio
+INNER JOIN #tmpFiltroPlan as pln
+	ON pol.IdPlan=pln.IdPlan
 WHERE pol.[IdCia]=@IdCia  
 AND pol.[IdFechaInscripcion]  BETWEEN 	@fechaInicioIncripcion AND	 @fechaFinInscripcion;
 
