@@ -152,6 +152,39 @@
       </DefaultValue>
       <Prompt>Fecha de Inscripción</Prompt>
     </ReportParameter>
+    <ReportParameter Name="MesesAnalisis">
+      <DataType>Integer</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>=36</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Meses</Prompt>
+      <ValidValues>
+        <ParameterValues>
+          <ParameterValue>
+            <Value>36</Value>
+            <Label>36</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>24</Value>
+            <Label>24</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>12</Value>
+            <Label>12</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>6</Value>
+            <Label>6</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>3</Value>
+            <Label>3</Label>
+          </ParameterValue>
+        </ParameterValues>
+      </ValidValues>
+    </ReportParameter>
   </ReportParameters>
   <EmbeddedImages>
     <EmbeddedImage Name="logo">
