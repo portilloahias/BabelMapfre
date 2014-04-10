@@ -11,6 +11,7 @@ DECLARE @CodigoProducto varchar(50);
 
 SET  @fechaInicio=getdate();
 SET @MesesAnalisis=12;
+SET @IdCia=
 
 
 
@@ -46,13 +47,17 @@ INNER JOIN 	[dbo].[DimCia]	as cia
 	AND sci.[CodigoCIA] = cia.[CodigoCIA]
 WHERE ([IdSocio]=@IdSocio OR @IdSocio=-1);
 
+
+
+
+--********************************************************************************************
+--********************************************************************************************
+
+
 --Consultar polizas que fueron dadas de alta en el periodo indicado.
 CREATE TABLE #tmpPolizasInscritas (idpoliza int,
                                    idFechaBaja int);
 
-
---********************************************************************************************
---********************************************************************************************
 --Insertar la polizas que fueron inscritas en el periodo definido.
 INSERT INTO #tmpPolizasInscritas (idpoliza,idFechaBaja)
 SELECT 	[IdPoliza],
@@ -65,15 +70,22 @@ INNER JOIN #tmpFiltroPlan as pln
 WHERE pol.[IdCia]=@IdCia  
 AND pol.[IdFechaInscripcion]  BETWEEN 	@fechaInicioIncripcion AND	 @fechaFinInscripcion;
 
---Insertar recibos que aplican en el periodo
- SELECT  [IdPoliza],
-         [MontoDolares],
+
+ --Consultar Recibos
+ CREATE TABLE #tmpRecibos (MontoDolares decimal(24,4),
+						   IdFechaCobroRecibo int);
+
+--Insertar recibos que aplican en el periodo 
+INSERT INTO #tmpRecibos(MontoDolares,IdFechaCobroRecibo) 
+SELECT  
+         MontoDolares=SUM([MontoDolares]),
 		 [IdFechaCobroRecibo] 
- FROM [dbo].[FactRecibo] as rcb
+FROM [dbo].[FactRecibo] as rcb
  INNER JOIN #tmpPolizasInscritas as tmp
  	ON 	 rcb.[IdPoliza]=tmp.idpoliza
 WHERE  [IdFechaCobroRecibo]	  BETWEEN @fechaInicioIncripcion AND  @fechaFinRecibos
 AND  [IdFechaAnulacionRecibo]  = -1
+GROUP BY   [IdFechaCobroRecibo] ;
 
 
 
@@ -84,7 +96,7 @@ AND  [IdFechaAnulacionRecibo]  = -1
 --Variables de proceso.
 DECLARE @contador int;
 DECLARE @year varchar(4);
-DECLARE @mes int;
+DECLARE @mes varchar(2);
 
 
 --Iniciando variables de proceso
@@ -93,7 +105,7 @@ SET @contador = 1;
 
 --Generar Meses 
 CREATE TABLE #Meses (IdMes int,
-                     MesYear int,
+                     MesYear varchar(6),
 					 DescripcionMesYear varchar(50));
 
 --Insertar Historial
@@ -105,9 +117,9 @@ BEGIN
 
 		INSERT INTO  #Meses (idMes, MesYear,DescripcionMesYear)
 		SELECT 	IdMes=@contador,
-		        MesYear = CONVERT(int,LEFT(@fechaInicioIncripcion,6)),
+		        MesYear = LEFT(@fechaInicioIncripcion,6),
 				DescripcionMesYear = CASE @mes
-											    WHEN '01' THEN	 'Enero-'      +  @year 
+											    WHEN '01' THEN	'Enero-'       +  @year 
 												WHEN '02' THEN  'Febrero-'     +  @year 
 												WHEN '03' THEN  'Marzo-'	   +  @year 
 												WHEN '04' THEN  'Abril-'	   +  @year 
@@ -127,5 +139,35 @@ BEGIN
 END
 
 
+--Generar producto final
+SELECT PolizasVigentesPorMes.IdMes,
+       PolizasVigentesPorMes.MesYear,
+	   PolizasVigentesPorMes.DescripcionMesYear,
+	   PolizasVigentesPorMes.PolizasActivas,
+	   rcb.MontoDolares
+FROM (
+		SELECT 	m.IdMes,
+				m.MesYear,
+				m.DescripcionMesYear,
+				PolizasActivas= SUM( CASE WHEN pol.[IdFechaBaja]=-1 THEN 1
+										  WHEN  CONVERT(int,LEFT(pol.[IdFechaBaja],6))< convert(int,m.MesYear) THEN 1
+										  ELSE 0 END)
+		FROM #Meses as M
+		CROSS JOIN  #tmpPolizasInscritas as pol
+		GROUP BY   m.IdMes,
+				   m.MesYear,
+				   m.DescripcionMesYear
+	) PolizasVigentesPorMes
+LEFT JOIN  #tmpRecibos rcb
+	ON 	PolizasVigentesPorMes.MesYear=left(rcb.IdFechaCobroRecibo,6)
+		   
+	
 
-								
+
+
+
+ DROP TABLE #tmpFiltroPlan;
+ DROP TABLE #tmpFiltroSocio
+ DROP TABLE #tmpPolizasInscritas	
+ DROP TABLE #Meses;	
+ DROP TABLE #tmpRecibos;						
