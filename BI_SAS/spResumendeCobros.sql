@@ -10,9 +10,11 @@ DECLARE @CodigoProducto varchar(50);
 
 
 SET  @fechaInicio=getdate();
-SET @MesesAnalisis=12;
-SET @IdCia=
-
+SET @MesesAnalisis=5;
+SET @IdCia=	2;
+SET @IdSocio=-1;
+SET @CodigoRamo='ND';
+SET @CodigoProducto='ND';
 
 
 --********************************************************************************************
@@ -37,9 +39,13 @@ INNER JOIN 	[dbo].[DimCia]	as cia
 WHERE (pln.[CodigoRamo] = @CodigoRamo OR  @CodigoRamo='ND') AND
       (pln.[CodigoProducto] =@CodigoProducto OR @CodigoProducto='ND');
 
+ --select * from #tmpFiltroPlan;
+
+
 
 --Filtrar los socios
 CREATE TABLE #tmpFiltroSocio (IdSocio int);
+INSERT INTO #tmpFiltroSocio( IdSocio)
 SELECT [IdSocio]
 FROM [dbo].[DimSocio] as sci
 INNER JOIN 	[dbo].[DimCia]	as cia
@@ -48,7 +54,7 @@ INNER JOIN 	[dbo].[DimCia]	as cia
 WHERE ([IdSocio]=@IdSocio OR @IdSocio=-1);
 
 
-
+--SELECT * FROM #tmpFiltroSocio;
 
 --********************************************************************************************
 --********************************************************************************************
@@ -70,6 +76,9 @@ INNER JOIN #tmpFiltroPlan as pln
 WHERE pol.[IdCia]=@IdCia  
 AND pol.[IdFechaInscripcion]  BETWEEN 	@fechaInicioIncripcion AND	 @fechaFinInscripcion;
 
+--SELECT @fechaInicioIncripcion,@fechaFinInscripcion;
+--SELECT idpoliza FROM #tmpPolizasInscritas;
+
 
  --Consultar Recibos
  CREATE TABLE #tmpRecibos (MontoDolares decimal(24,4),
@@ -79,16 +88,18 @@ AND pol.[IdFechaInscripcion]  BETWEEN 	@fechaInicioIncripcion AND	 @fechaFinInsc
 INSERT INTO #tmpRecibos(MontoDolares,IdFechaCobroRecibo) 
 SELECT  
          MontoDolares=SUM([MontoDolares]),
-		 [IdFechaCobroRecibo] 
+		 IdFechaCobroRecibo=CONVERT(int,left([IdFechaCobroRecibo],6)) 
 FROM [dbo].[FactRecibo] as rcb
  INNER JOIN #tmpPolizasInscritas as tmp
  	ON 	 rcb.[IdPoliza]=tmp.idpoliza
 WHERE  [IdFechaCobroRecibo]	  BETWEEN @fechaInicioIncripcion AND  @fechaFinRecibos
 AND  [IdFechaAnulacionRecibo]  = -1
-GROUP BY   [IdFechaCobroRecibo] ;
+GROUP BY   CONVERT(int,left([IdFechaCobroRecibo],6))  ;
 
 
+ 
 
+--SELECT * FROM #tmpRecibos;
 --********************************************************************************************
 --********************************************************************************************
 --Generar resultado query de matrix.
@@ -133,11 +144,27 @@ BEGIN
 												WHEN '12' THEN  'Diciembre-'   +  @year
 											END;
 	 --Aumentar contadores
-	 SET @contador = @contador +1;
-	 SET @fechaInicioIncripcion = CONVERT(int, dateadd(MONTH,1,CONVERT(datetime, CONVERT(varchar(10),@fechaInicioIncripcion),112));
+	 SET @contador = @contador + 1;
+	 SET @fechaInicioIncripcion =  CONVERT(int,CONVERT(varchar(10),DATEADD(MONTH,1,CONVERT(datetime,CONVERT(varchar(10),@fechaInicioIncripcion),112)),112));
 		        
 END
 
+
+
+
+SELECT 	m.IdMes,
+		m.MesYear,
+		m.DescripcionMesYear,
+		PolizasActivas= SUM( CASE WHEN pol.[IdFechaBaja]=-1 THEN 1
+									--WHEN    convert(int,m.MesYear) < pol.[IdFechaBaja] THEN 1
+									ELSE 0 END)	,
+	    PolizasActivas2= SUM( CASE WHEN    convert(int,m.MesYear) < convert(int,left(pol.[IdFechaBaja],6))   THEN 1
+									ELSE 0 END)
+FROM #Meses as M
+CROSS JOIN  #tmpPolizasInscritas as pol
+GROUP BY   m.IdMes,
+			m.MesYear,
+			m.DescripcionMesYear
 
 --Generar producto final
 SELECT PolizasVigentesPorMes.IdMes,
@@ -150,7 +177,7 @@ FROM (
 				m.MesYear,
 				m.DescripcionMesYear,
 				PolizasActivas= SUM( CASE WHEN pol.[IdFechaBaja]=-1 THEN 1
-										  WHEN  CONVERT(int,LEFT(pol.[IdFechaBaja],6))< convert(int,m.MesYear) THEN 1
+										  WHEN    convert(int,m.MesYear) < convert(int,left(pol.[IdFechaBaja],6))  THEN 1
 										  ELSE 0 END)
 		FROM #Meses as M
 		CROSS JOIN  #tmpPolizasInscritas as pol
@@ -162,7 +189,7 @@ LEFT JOIN  #tmpRecibos rcb
 	ON 	PolizasVigentesPorMes.MesYear=left(rcb.IdFechaCobroRecibo,6)
 		   
 	
-
+ select * from #tmpRecibos;
 
 
 
@@ -170,4 +197,9 @@ LEFT JOIN  #tmpRecibos rcb
  DROP TABLE #tmpFiltroSocio
  DROP TABLE #tmpPolizasInscritas	
  DROP TABLE #Meses;	
- DROP TABLE #tmpRecibos;						
+ DROP TABLE #tmpRecibos;	
+ 
+ 
+ --SELECT CONVERT(int, dateadd(MONTH,1,CONVERT(datetime, CONVERT(varchar(10),20000101),112)));	
+ 
+ --SELECT CONVERT(int,CONVERT(varchar(10),DATEADD(MONTH,1,CONVERT(datetime,CONVERT(varchar(10),20000101),112)),112))				
