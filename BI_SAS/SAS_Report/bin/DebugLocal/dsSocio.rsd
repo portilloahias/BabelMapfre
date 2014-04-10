@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition">
+  <DataSet Name="">
+    <Query>
+      <DataSourceReference>SAS_DW</DataSourceReference>
+      <CommandText>SELECT        - 1 AS IdSocio, 'Todos' AS Socio, IdCia
+FROM            DimCia AS cia
+WHERE        (IdCia &gt; 0)
+UNION ALL
+SELECT        soc.IdSocio, soc.CodigoSocio + ' - ' + soc.NombreSocio AS Socio, cia.IdCia
+FROM            DimSocio AS soc INNER JOIN
+                         DimCia AS cia ON soc.CodigoCia = cia.CodigoCia
+WHERE        (soc.IdSocio &gt; 0)</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="IdSocio">
+        <DataField>IdSocio</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Socio">
+        <DataField>Socio</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="IdCia">
+        <DataField>IdCia</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

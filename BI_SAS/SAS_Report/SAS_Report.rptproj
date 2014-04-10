@@ -7,7 +7,16 @@
       <FullPath>SAS_DW.rds</FullPath>
     </ProjectItem>
   </DataSources>
-  <DataSets />
+  <DataSets>
+    <ProjectItem>
+      <Name>dsCIA.rsd</Name>
+      <FullPath>dsCIA.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>dsSocio.rsd</Name>
+      <FullPath>dsSocio.rsd</FullPath>
+    </ProjectItem>
+  </DataSets>
   <Reports>
     <ProjectItem>
       <Name>SAS_DW_ResumenDeCobros.rdl</Name>
