@@ -142,6 +142,17 @@
     <Style />
   </Page>
   <AutoRefresh>0</AutoRefresh>
+  <ReportParameters>
+    <ReportParameter Name="fechaInicio">
+      <DataType>DateTime</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>=Now()</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Fecha de Inscripción</Prompt>
+    </ReportParameter>
+  </ReportParameters>
   <EmbeddedImages>
     <EmbeddedImage Name="logo">
       <MIMEType>image/png</MIMEType>
