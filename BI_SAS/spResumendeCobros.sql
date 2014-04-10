@@ -18,7 +18,7 @@ SET @MesesAnalisis=12;
 --********************************************************************************************
 --Calcular la Fecha de Inscripcion de polizas
 SET  @fechaInicioIncripcion = CONVERT(int, (LEFT(CONVERT(VARCHAR(10),  DATEADD(Month,-@MesesAnalisis,@fechaInicio),112),6) + '01')	);
-SET  @fechaFinInscripcion =   CONVERT(VARCHAR(10),DATEADD(day,-1,CONVERT(datetime,CONVERT(VARCHAR(10),@fechaInicioIncripcion))),112)
+SET  @fechaFinInscripcion =   CONVERT(VARCHAR(10),DATEADD(DAY, -1, DATEADD(MONTH,1,CONVERT(datetime,CONVERT(VARCHAR(10),@fechaInicioIncripcion)))),112)
 SET  @fechaFinRecibos =CONVERT (int, CONVERT(VARCHAR(10),@fechaInicio,112));
 
 
