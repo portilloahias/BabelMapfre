@@ -24,11 +24,19 @@
       <Name>dsProducto.rsd</Name>
       <FullPath>dsProducto.rsd</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>dsResumenDeCobros.rsd</Name>
+      <FullPath>dsResumenDeCobros.rsd</FullPath>
+    </ProjectItem>
   </DataSets>
   <Reports>
     <ProjectItem>
       <Name>SAS_DW_ResumenDeCobros.rdl</Name>
       <FullPath>SAS_DW_ResumenDeCobros.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Report1.rdl</Name>
+      <FullPath>Report1.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>

@@ -1,4 +1,4 @@
-CREATE PROCEDURE spRPTResumenDeCobros
+ALTER PROCEDURE spRPTResumenDeCobros
 (
 		@fechaInicio datetime,
 		@MesesAnalisis int,
@@ -54,49 +54,33 @@ BEGIN
 
 
 
+
 	--********************************************************************************************
 	--********************************************************************************************
+	--Tablas de proceso de registros temporales.
 
-
-	--Consultar polizas que fueron dadas de alta en el periodo indicado.
+	--Tabla de proceso de polizas
 	CREATE TABLE #tmpPolizasInscritas (idpoliza int,
 									   idFechaBaja int);
 
-	--Insertar la polizas que fueron inscritas en el periodo definido.
-	INSERT INTO #tmpPolizasInscritas (idpoliza,idFechaBaja)
-	SELECT 	[IdPoliza],
-			[IdFechaBaja]
-	FROM  [dbo].[FactPoliza] as pol
-	INNER JOIN 	  #tmpFiltroSocio as soc
-		ON pol.[IdSocio]= soc.IdSocio
-	INNER JOIN #tmpFiltroPlan as pln
-		ON pol.IdPlan=pln.IdPlan
-	WHERE pol.[IdCia]=@IdCia  
-	AND pol.[IdFechaInscripcion]  BETWEEN 	@fechaInicioIncripcion AND	 @fechaFinInscripcion;
 
-
-
-	 --Consultar Recibos
+	 --Tabla de proceso de recibos
 	 CREATE TABLE #tmpRecibos (MontoDolares decimal(24,4),
 							   IdFechaCobroRecibo int);
 
-	--Insertar recibos que aplican en el periodo 
-	INSERT INTO #tmpRecibos(MontoDolares,IdFechaCobroRecibo) 
-	SELECT  
-			 MontoDolares=SUM([MontoDolares]),
-			 IdFechaCobroRecibo=CONVERT(int,left([IdFechaCobroRecibo],6)) 
-	FROM [dbo].[FactRecibo] as rcb
-	 INNER JOIN #tmpPolizasInscritas as tmp
- 		ON 	 rcb.[IdPoliza]=tmp.idpoliza
-	WHERE  [IdFechaCobroRecibo]	  BETWEEN @fechaInicioIncripcion AND  @fechaFinRecibos
-	AND  [IdFechaAnulacionRecibo]  = -1
-	GROUP BY   CONVERT(int,left([IdFechaCobroRecibo],6))  ;
-
-
+	--Tabla final de query
+	CREATE TABLE #TmpResumenDeCobros (idMesColumna int,
+	                                  MesYearColumna varchar(6),
+									  DescripcionMesYearColumna varchar(50),
+									  idMesColumn int, 
+	                                  MesYearColumna varchar(6),
+									  DescripcionMesYearColumna varchar(50),
+									  PolizasActivas int,
+									  MontoDolares decimal(24,4)); 
  
 	--********************************************************************************************
 	--********************************************************************************************
-	--Generar resultado query de matrix.
+	--Generar Elementos de Filas y columnas.
 
 	--Variables de proceso.
 	DECLARE @contador int;
@@ -144,6 +128,49 @@ BEGIN
 	END
 
 
+	--Generar matrix de Fecha de inscripcion vrs Anyejamiento de polizas
+	SET @contador = 1; 
+	WHILE  @contador<=@MesesAnalisis
+	BEGIN
+
+	       --Limpiar tablas de proceso
+		   TRUNCATE TABLE #tmpPolizasInscritas;
+		   TRUNCATE TABLE #tmpRecibos; 
+
+			--Insertar la polizas que fueron inscritas en el periodo definido.
+			INSERT INTO #tmpPolizasInscritas (idpoliza,idFechaBaja)
+			SELECT 	[IdPoliza],
+					[IdFechaBaja]
+			FROM  [dbo].[FactPoliza] as pol
+			INNER JOIN 	  #tmpFiltroSocio as soc
+				ON pol.[IdSocio]= soc.IdSocio
+			INNER JOIN #tmpFiltroPlan as pln
+				ON pol.IdPlan=pln.IdPlan
+			WHERE pol.[IdCia]=@IdCia  
+			AND pol.[IdFechaInscripcion]  BETWEEN 	@fechaInicioIncripcion AND	 @fechaFinInscripcion;
+
+
+
+
+
+			--Insertar recibos que aplican en el periodo 
+			INSERT INTO #tmpRecibos(MontoDolares,IdFechaCobroRecibo) 
+			SELECT  
+					 MontoDolares=SUM([MontoDolares]),
+					 IdFechaCobroRecibo=CONVERT(int,left([IdFechaCobroRecibo],6)) 
+			FROM [dbo].[FactRecibo] as rcb
+			 INNER JOIN #tmpPolizasInscritas as tmp
+ 				ON 	 rcb.[IdPoliza]=tmp.idpoliza
+			WHERE  [IdFechaCobroRecibo]	  BETWEEN @fechaInicioIncripcion AND  @fechaFinRecibos
+			AND  [IdFechaAnulacionRecibo]  = -1
+			GROUP BY   CONVERT(int,left([IdFechaCobroRecibo],6))  ;
+
+
+	     --Aumentar contadores
+		 SET @contador = @contador + 1;
+		 SET @fechaInicioIncripcion =  CONVERT(int,CONVERT(varchar(10),DATEADD(MONTH,1,CONVERT(datetime,CONVERT(varchar(10),@fechaInicioIncripcion),112)),112));
+	END
+
 	--Generar producto final
 	SELECT PolizasVigentesPorMes.IdMes,
 		   PolizasVigentesPorMes.MesYear,
@@ -165,6 +192,7 @@ BEGIN
 		) PolizasVigentesPorMes
 	LEFT JOIN  #tmpRecibos rcb
 		ON 	PolizasVigentesPorMes.MesYear=left(rcb.IdFechaCobroRecibo,6)
+	ORDER BY	PolizasVigentesPorMes.IdMes
 		   
 	
 
