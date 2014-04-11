@@ -207,9 +207,20 @@
                         <rd:DefaultName>Textbox29</rd:DefaultName>
                         <Style>
                           <Border>
-                            <Color>LightGrey</Color>
                             <Style>Solid</Style>
                           </Border>
+                          <TopBorder>
+                            <Color>Black</Color>
+                          </TopBorder>
+                          <BottomBorder>
+                            <Color>Black</Color>
+                          </BottomBorder>
+                          <LeftBorder>
+                            <Color>Black</Color>
+                          </LeftBorder>
+                          <RightBorder>
+                            <Color>Black</Color>
+                          </RightBorder>
                           <PaddingLeft>2pt</PaddingLeft>
                           <PaddingRight>2pt</PaddingRight>
                           <PaddingTop>2pt</PaddingTop>
@@ -243,9 +254,20 @@
                         <rd:DefaultName>Textbox30</rd:DefaultName>
                         <Style>
                           <Border>
-                            <Color>LightGrey</Color>
                             <Style>Solid</Style>
                           </Border>
+                          <TopBorder>
+                            <Color>Black</Color>
+                          </TopBorder>
+                          <BottomBorder>
+                            <Color>Black</Color>
+                          </BottomBorder>
+                          <LeftBorder>
+                            <Color>Black</Color>
+                          </LeftBorder>
+                          <RightBorder>
+                            <Color>Black</Color>
+                          </RightBorder>
                           <PaddingLeft>2pt</PaddingLeft>
                           <PaddingRight>2pt</PaddingRight>
                           <PaddingTop>2pt</PaddingTop>
@@ -281,6 +303,7 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!MontoDolares.Value)</Value>
                                   <Style>
+                                    <FontSize>9pt</FontSize>
                                     <Format>$###,###,###.00</Format>
                                   </Style>
                                 </TextRun>
@@ -293,9 +316,20 @@
                           <rd:DefaultName>MontoDolares1</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Color>Black</Color>
+                            </RightBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -314,7 +348,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Sum(Fields!MontoDolares.Value)</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -325,9 +361,20 @@
                           <rd:DefaultName>MontoDolares</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Color>Black</Color>
+                            </RightBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -351,7 +398,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Sum(Fields!MontoDolares.Value)</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -362,9 +411,20 @@
                           <rd:DefaultName>MontoDolares3</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Color>Black</Color>
+                            </RightBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -383,7 +443,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Sum(Fields!MontoDolares.Value)</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -394,9 +456,20 @@
                           <rd:DefaultName>Textbox50</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Color>Black</Color>
+                            </RightBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -442,9 +515,15 @@
                         <rd:DefaultName>Textbox32</rd:DefaultName>
                         <Style>
                           <Border>
-                            <Color>LightGrey</Color>
+                            <Color>White</Color>
                             <Style>Solid</Style>
                           </Border>
+                          <BottomBorder>
+                            <Color>Black</Color>
+                          </BottomBorder>
+                          <LeftBorder>
+                            <Color>White</Color>
+                          </LeftBorder>
                           <PaddingLeft>2pt</PaddingLeft>
                           <PaddingRight>2pt</PaddingRight>
                           <PaddingTop>2pt</PaddingTop>
@@ -465,7 +544,7 @@
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value>="(" + Fields!idMesColumna.Value.ToString() + ")" + vbCrLf  + Fields!DescripcionMesYearColumna.Value</Value>
+                                    <Value>=Fields!idMesColumna.Value.ToString() + vbCrLf  + Fields!DescripcionMesYearColumna.Value</Value>
                                     <Style />
                                   </TextRun>
                                 </TextRuns>
@@ -477,9 +556,20 @@
                             <rd:DefaultName>idMesColumna1</rd:DefaultName>
                             <Style>
                               <Border>
-                                <Color>LightGrey</Color>
                                 <Style>Solid</Style>
                               </Border>
+                              <TopBorder>
+                                <Color>Black</Color>
+                              </TopBorder>
+                              <BottomBorder>
+                                <Color>Black</Color>
+                              </BottomBorder>
+                              <LeftBorder>
+                                <Color>Black</Color>
+                              </LeftBorder>
+                              <RightBorder>
+                                <Color>Black</Color>
+                              </RightBorder>
                               <PaddingLeft>2pt</PaddingLeft>
                               <PaddingRight>2pt</PaddingRight>
                               <PaddingTop>2pt</PaddingTop>
@@ -512,9 +602,12 @@
                         <rd:DefaultName>Textbox47</rd:DefaultName>
                         <Style>
                           <Border>
-                            <Color>LightGrey</Color>
+                            <Color>White</Color>
                             <Style>Solid</Style>
                           </Border>
+                          <BottomBorder>
+                            <Color>Black</Color>
+                          </BottomBorder>
                           <PaddingLeft>2pt</PaddingLeft>
                           <PaddingRight>2pt</PaddingRight>
                           <PaddingTop>2pt</PaddingTop>
@@ -547,9 +640,20 @@
                             <rd:DefaultName>Textbox48</rd:DefaultName>
                             <Style>
                               <Border>
-                                <Color>LightGrey</Color>
                                 <Style>Solid</Style>
                               </Border>
+                              <TopBorder>
+                                <Color>Black</Color>
+                              </TopBorder>
+                              <BottomBorder>
+                                <Color>Black</Color>
+                              </BottomBorder>
+                              <LeftBorder>
+                                <Color>Black</Color>
+                              </LeftBorder>
+                              <RightBorder>
+                                <Color>Black</Color>
+                              </RightBorder>
                               <PaddingLeft>2pt</PaddingLeft>
                               <PaddingRight>2pt</PaddingRight>
                               <PaddingTop>2pt</PaddingTop>
@@ -577,7 +681,7 @@
                     </SortExpression>
                   </SortExpressions>
                   <TablixHeader>
-                    <Size>1.91319in</Size>
+                    <Size>1.95833in</Size>
                     <CellContents>
                       <Textbox Name="idMesFila">
                         <CanGrow>true</CanGrow>
@@ -586,7 +690,7 @@
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>="(" + Fields!idMesFila.Value.ToString() + ")"  + vbCrLf  + Fields!DescripcionMesYearFila.Value</Value>
+                                <Value>=Fields!idMesFila.Value.ToString()  + vbCrLf  + Fields!DescripcionMesYearFila.Value</Value>
                                 <Style>
                                   <FontStyle>Italic</FontStyle>
                                 </Style>
@@ -600,9 +704,20 @@
                         <rd:DefaultName>idMesFila</rd:DefaultName>
                         <Style>
                           <Border>
-                            <Color>LightGrey</Color>
                             <Style>Solid</Style>
                           </Border>
+                          <TopBorder>
+                            <Color>Black</Color>
+                          </TopBorder>
+                          <BottomBorder>
+                            <Color>Black</Color>
+                          </BottomBorder>
+                          <LeftBorder>
+                            <Color>Black</Color>
+                          </LeftBorder>
+                          <RightBorder>
+                            <Color>Black</Color>
+                          </RightBorder>
                           <PaddingLeft>2pt</PaddingLeft>
                           <PaddingRight>2pt</PaddingRight>
                           <PaddingTop>2pt</PaddingTop>
@@ -614,7 +729,7 @@
                 </TablixMember>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>1.91319in</Size>
+                    <Size>1.95833in</Size>
                     <CellContents>
                       <Textbox Name="Textbox39">
                         <CanGrow>true</CanGrow>
@@ -625,7 +740,7 @@
                               <TextRun>
                                 <Value>Total General</Value>
                                 <Style>
-                                  <FontStyle>Italic</FontStyle>
+                                  <FontWeight>Bold</FontWeight>
                                 </Style>
                               </TextRun>
                             </TextRuns>
@@ -637,9 +752,20 @@
                         <rd:DefaultName>Textbox39</rd:DefaultName>
                         <Style>
                           <Border>
-                            <Color>LightGrey</Color>
                             <Style>Solid</Style>
                           </Border>
+                          <TopBorder>
+                            <Color>Black</Color>
+                          </TopBorder>
+                          <BottomBorder>
+                            <Color>Black</Color>
+                          </BottomBorder>
+                          <LeftBorder>
+                            <Color>Black</Color>
+                          </LeftBorder>
+                          <RightBorder>
+                            <Color>Black</Color>
+                          </RightBorder>
                           <PaddingLeft>2pt</PaddingLeft>
                           <PaddingRight>2pt</PaddingRight>
                           <PaddingTop>2pt</PaddingTop>
@@ -656,7 +782,7 @@
             <Top>0.20834in</Top>
             <Left>0.25917in</Left>
             <Height>1in</Height>
-            <Width>5in</Width>
+            <Width>5.04514in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -688,9 +814,20 @@
                         <rd:DefaultName>Textbox29</rd:DefaultName>
                         <Style>
                           <Border>
-                            <Color>LightGrey</Color>
                             <Style>Solid</Style>
                           </Border>
+                          <TopBorder>
+                            <Color>Black</Color>
+                          </TopBorder>
+                          <BottomBorder>
+                            <Color>Black</Color>
+                          </BottomBorder>
+                          <LeftBorder>
+                            <Color>Black</Color>
+                          </LeftBorder>
+                          <RightBorder>
+                            <Color>Black</Color>
+                          </RightBorder>
                           <PaddingLeft>2pt</PaddingLeft>
                           <PaddingRight>2pt</PaddingRight>
                           <PaddingTop>2pt</PaddingTop>
@@ -724,9 +861,20 @@
                         <rd:DefaultName>Textbox30</rd:DefaultName>
                         <Style>
                           <Border>
-                            <Color>LightGrey</Color>
                             <Style>Solid</Style>
                           </Border>
+                          <TopBorder>
+                            <Color>Black</Color>
+                          </TopBorder>
+                          <BottomBorder>
+                            <Color>Black</Color>
+                          </BottomBorder>
+                          <LeftBorder>
+                            <Color>Black</Color>
+                          </LeftBorder>
+                          <RightBorder>
+                            <Color>Black</Color>
+                          </RightBorder>
                           <PaddingLeft>2pt</PaddingLeft>
                           <PaddingRight>2pt</PaddingRight>
                           <PaddingTop>2pt</PaddingTop>
@@ -741,7 +889,7 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.36458in</Width>
+                  <Width>1.72569in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -769,9 +917,20 @@
                           <rd:DefaultName>MontoDolares1</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Color>Black</Color>
+                            </RightBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -795,7 +954,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Sum(Fields!PolizasActivas.Value)</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -806,9 +967,20 @@
                           <rd:DefaultName>PolizasActivas</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Color>Black</Color>
+                            </RightBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -854,9 +1026,15 @@
                         <rd:DefaultName>Textbox32</rd:DefaultName>
                         <Style>
                           <Border>
-                            <Color>LightGrey</Color>
+                            <Color>White</Color>
                             <Style>Solid</Style>
                           </Border>
+                          <BottomBorder>
+                            <Color>Black</Color>
+                          </BottomBorder>
+                          <LeftBorder>
+                            <Color>White</Color>
+                          </LeftBorder>
                           <PaddingLeft>2pt</PaddingLeft>
                           <PaddingRight>2pt</PaddingRight>
                           <PaddingTop>2pt</PaddingTop>
@@ -877,7 +1055,7 @@
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value>="(" + Fields!idMesColumna.Value.ToString() + ")" + Constants.vbCrLf + Fields!DescripcionMesYearColumna.Value</Value>
+                                    <Value>=Fields!idMesColumna.Value.ToString() + Constants.vbCrLf + Fields!DescripcionMesYearColumna.Value</Value>
                                     <Style />
                                   </TextRun>
                                 </TextRuns>
@@ -889,9 +1067,20 @@
                             <rd:DefaultName>idMesColumna1</rd:DefaultName>
                             <Style>
                               <Border>
-                                <Color>LightGrey</Color>
                                 <Style>Solid</Style>
                               </Border>
+                              <TopBorder>
+                                <Color>Black</Color>
+                              </TopBorder>
+                              <BottomBorder>
+                                <Color>Black</Color>
+                              </BottomBorder>
+                              <LeftBorder>
+                                <Color>Black</Color>
+                              </LeftBorder>
+                              <RightBorder>
+                                <Color>Black</Color>
+                              </RightBorder>
                               <PaddingLeft>2pt</PaddingLeft>
                               <PaddingRight>2pt</PaddingRight>
                               <PaddingTop>2pt</PaddingTop>
@@ -919,7 +1108,7 @@
                     </SortExpression>
                   </SortExpressions>
                   <TablixHeader>
-                    <Size>1.55208in</Size>
+                    <Size>1.95833in</Size>
                     <CellContents>
                       <Textbox Name="idMesFila2">
                         <CanGrow>true</CanGrow>
@@ -928,7 +1117,7 @@
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>="(" + Fields!idMesFila.Value.ToString() + ")" + Constants.vbCrLf + Fields!DescripcionMesYearFila.Value</Value>
+                                <Value>=Fields!idMesFila.Value.ToString()  + Constants.vbCrLf + Fields!DescripcionMesYearFila.Value</Value>
                                 <Style>
                                   <FontStyle>Italic</FontStyle>
                                 </Style>
@@ -942,9 +1131,20 @@
                         <rd:DefaultName>idMesFila</rd:DefaultName>
                         <Style>
                           <Border>
-                            <Color>LightGrey</Color>
                             <Style>Solid</Style>
                           </Border>
+                          <TopBorder>
+                            <Color>Black</Color>
+                          </TopBorder>
+                          <BottomBorder>
+                            <Color>Black</Color>
+                          </BottomBorder>
+                          <LeftBorder>
+                            <Color>Black</Color>
+                          </LeftBorder>
+                          <RightBorder>
+                            <Color>Black</Color>
+                          </RightBorder>
                           <PaddingLeft>2pt</PaddingLeft>
                           <PaddingRight>2pt</PaddingRight>
                           <PaddingTop>2pt</PaddingTop>
@@ -956,7 +1156,7 @@
                 </TablixMember>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>1.55208in</Size>
+                    <Size>1.95833in</Size>
                     <CellContents>
                       <Textbox Name="Textbox45">
                         <CanGrow>true</CanGrow>
@@ -967,7 +1167,7 @@
                               <TextRun>
                                 <Value>Total General</Value>
                                 <Style>
-                                  <FontStyle>Italic</FontStyle>
+                                  <FontWeight>Bold</FontWeight>
                                 </Style>
                               </TextRun>
                             </TextRuns>
@@ -979,9 +1179,20 @@
                         <rd:DefaultName>Textbox45</rd:DefaultName>
                         <Style>
                           <Border>
-                            <Color>LightGrey</Color>
                             <Style>Solid</Style>
                           </Border>
+                          <TopBorder>
+                            <Color>Black</Color>
+                          </TopBorder>
+                          <BottomBorder>
+                            <Color>Black</Color>
+                          </BottomBorder>
+                          <LeftBorder>
+                            <Color>Black</Color>
+                          </LeftBorder>
+                          <RightBorder>
+                            <Color>Black</Color>
+                          </RightBorder>
                           <PaddingLeft>2pt</PaddingLeft>
                           <PaddingRight>2pt</PaddingRight>
                           <PaddingTop>2pt</PaddingTop>
@@ -998,7 +1209,7 @@
             <Top>1.60417in</Top>
             <Left>0.25917in</Left>
             <Height>1in</Height>
-            <Width>2.91666in</Width>
+            <Width>3.68402in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
