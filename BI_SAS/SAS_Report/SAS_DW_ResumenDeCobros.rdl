@@ -200,7 +200,7 @@
                               </TextRun>
                             </TextRuns>
                             <Style>
-                              <TextAlign>Center</TextAlign>
+                              <TextAlign>Right</TextAlign>
                             </Style>
                           </Paragraph>
                         </Paragraphs>
@@ -247,7 +247,7 @@
                               </TextRun>
                             </TextRuns>
                             <Style>
-                              <TextAlign>Center</TextAlign>
+                              <TextAlign>Right</TextAlign>
                             </Style>
                           </Paragraph>
                         </Paragraphs>
@@ -349,7 +349,7 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!MontoDolares.Value)</Value>
                                   <Style>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>$###,###,###.00</Format>
                                   </Style>
@@ -377,7 +377,7 @@
                             <RightBorder>
                               <Color>Black</Color>
                             </RightBorder>
-                            <BackgroundColor>Silver</BackgroundColor>
+                            <BackgroundColor>LightGrey</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -402,6 +402,7 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!MontoDolares.Value)</Value>
                                   <Style>
+                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>$###,###,###.00</Format>
                                   </Style>
@@ -429,7 +430,7 @@
                             <RightBorder>
                               <Color>Black</Color>
                             </RightBorder>
-                            <BackgroundColor>Silver</BackgroundColor>
+                            <BackgroundColor>LightGrey</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -449,6 +450,7 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!MontoDolares.Value)</Value>
                                   <Style>
+                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>$###,###,###.00</Format>
                                   </Style>
@@ -476,6 +478,7 @@
                             <RightBorder>
                               <Color>Black</Color>
                             </RightBorder>
+                            <BackgroundColor>LightGrey</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -541,7 +544,7 @@
                   <TablixMembers>
                     <TablixMember>
                       <TablixHeader>
-                        <Size>0.25in</Size>
+                        <Size>0.44792in</Size>
                         <CellContents>
                           <Textbox Name="idMesColumna1">
                             <CanGrow>true</CanGrow>
@@ -551,7 +554,10 @@
                                 <TextRuns>
                                   <TextRun>
                                     <Value>=Fields!idMesColumna.Value.ToString() + vbCrLf  + Fields!DescripcionMesYearColumna.Value</Value>
-                                    <Style />
+                                    <Style>
+                                      <FontWeight>Bold</FontWeight>
+                                      <Color>White</Color>
+                                    </Style>
                                   </TextRun>
                                 </TextRuns>
                                 <Style>
@@ -576,7 +582,7 @@
                               <RightBorder>
                                 <Color>Black</Color>
                               </RightBorder>
-                              <BackgroundColor>LightSteelBlue</BackgroundColor>
+                              <BackgroundColor>#c10003</BackgroundColor>
                               <PaddingLeft>2pt</PaddingLeft>
                               <PaddingRight>2pt</PaddingRight>
                               <PaddingTop>2pt</PaddingTop>
@@ -626,7 +632,7 @@
                   <TablixMembers>
                     <TablixMember>
                       <TablixHeader>
-                        <Size>0.25in</Size>
+                        <Size>0.44792in</Size>
                         <CellContents>
                           <Textbox Name="Textbox48">
                             <CanGrow>true</CanGrow>
@@ -637,6 +643,7 @@
                                   <TextRun>
                                     <Value>Total General</Value>
                                     <Style>
+                                      <FontSize>11pt</FontSize>
                                       <FontWeight>Bold</FontWeight>
                                     </Style>
                                   </TextRun>
@@ -663,7 +670,7 @@
                               <RightBorder>
                                 <Color>Black</Color>
                               </RightBorder>
-                              <BackgroundColor>Silver</BackgroundColor>
+                              <BackgroundColor>LightGrey</BackgroundColor>
                               <PaddingLeft>2pt</PaddingLeft>
                               <PaddingRight>2pt</PaddingRight>
                               <PaddingTop>2pt</PaddingTop>
@@ -703,6 +710,8 @@
                                 <Value>=Fields!idMesFila.Value.ToString()  + vbCrLf  + Fields!DescripcionMesYearFila.Value</Value>
                                 <Style>
                                   <FontStyle>Italic</FontStyle>
+                                  <FontWeight>Bold</FontWeight>
+                                  <Color>White</Color>
                                 </Style>
                               </TextRun>
                             </TextRuns>
@@ -728,7 +737,7 @@
                           <RightBorder>
                             <Color>Black</Color>
                           </RightBorder>
-                          <BackgroundColor>LightSteelBlue</BackgroundColor>
+                          <BackgroundColor>#c10003</BackgroundColor>
                           <PaddingLeft>2pt</PaddingLeft>
                           <PaddingRight>2pt</PaddingRight>
                           <PaddingTop>2pt</PaddingTop>
@@ -751,6 +760,7 @@
                               <TextRun>
                                 <Value>Total General</Value>
                                 <Style>
+                                  <FontSize>11pt</FontSize>
                                   <FontWeight>Bold</FontWeight>
                                 </Style>
                               </TextRun>
@@ -777,7 +787,7 @@
                           <RightBorder>
                             <Color>Black</Color>
                           </RightBorder>
-                          <BackgroundColor>Silver</BackgroundColor>
+                          <BackgroundColor>LightGrey</BackgroundColor>
                           <PaddingLeft>2pt</PaddingLeft>
                           <PaddingRight>2pt</PaddingRight>
                           <PaddingTop>2pt</PaddingTop>
@@ -793,7 +803,7 @@
             <DataSetName>dsResumenDeCobros</DataSetName>
             <Top>0.57639in</Top>
             <Left>0.25917in</Left>
-            <Height>1.19792in</Height>
+            <Height>1.39584in</Height>
             <Width>5.87499in</Width>
             <Style>
               <Border>
@@ -819,7 +829,7 @@
                               </TextRun>
                             </TextRuns>
                             <Style>
-                              <TextAlign>Center</TextAlign>
+                              <TextAlign>Right</TextAlign>
                             </Style>
                           </Paragraph>
                         </Paragraphs>
@@ -866,7 +876,7 @@
                               </TextRun>
                             </TextRuns>
                             <Style>
-                              <TextAlign>Center</TextAlign>
+                              <TextAlign>Right</TextAlign>
                             </Style>
                           </Paragraph>
                         </Paragraphs>
@@ -967,6 +977,7 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!PolizasActivas.Value)</Value>
                                   <Style>
+                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -993,7 +1004,7 @@
                             <RightBorder>
                               <Color>Black</Color>
                             </RightBorder>
-                            <BackgroundColor>Silver</BackgroundColor>
+                            <BackgroundColor>LightGrey</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1059,7 +1070,7 @@
                   <TablixMembers>
                     <TablixMember>
                       <TablixHeader>
-                        <Size>0.25in</Size>
+                        <Size>0.44792in</Size>
                         <CellContents>
                           <Textbox Name="idMesColumna2">
                             <CanGrow>true</CanGrow>
@@ -1069,7 +1080,10 @@
                                 <TextRuns>
                                   <TextRun>
                                     <Value>=Fields!idMesColumna.Value.ToString() + Constants.vbCrLf + Fields!DescripcionMesYearColumna.Value</Value>
-                                    <Style />
+                                    <Style>
+                                      <FontWeight>Bold</FontWeight>
+                                      <Color>White</Color>
+                                    </Style>
                                   </TextRun>
                                 </TextRuns>
                                 <Style>
@@ -1094,7 +1108,7 @@
                               <RightBorder>
                                 <Color>Black</Color>
                               </RightBorder>
-                              <BackgroundColor>LightSteelBlue</BackgroundColor>
+                              <BackgroundColor>#c10003</BackgroundColor>
                               <PaddingLeft>2pt</PaddingLeft>
                               <PaddingRight>2pt</PaddingRight>
                               <PaddingTop>2pt</PaddingTop>
@@ -1134,11 +1148,13 @@
                                 <Value>=Fields!idMesFila.Value.ToString()  + Constants.vbCrLf + Fields!DescripcionMesYearFila.Value</Value>
                                 <Style>
                                   <FontStyle>Italic</FontStyle>
+                                  <FontWeight>Bold</FontWeight>
+                                  <Color>White</Color>
                                 </Style>
                               </TextRun>
                             </TextRuns>
                             <Style>
-                              <TextAlign>Center</TextAlign>
+                              <TextAlign>Right</TextAlign>
                             </Style>
                           </Paragraph>
                         </Paragraphs>
@@ -1159,7 +1175,7 @@
                           <RightBorder>
                             <Color>Black</Color>
                           </RightBorder>
-                          <BackgroundColor>LightSteelBlue</BackgroundColor>
+                          <BackgroundColor>#c10003</BackgroundColor>
                           <PaddingLeft>2pt</PaddingLeft>
                           <PaddingRight>2pt</PaddingRight>
                           <PaddingTop>2pt</PaddingTop>
@@ -1182,6 +1198,7 @@
                               <TextRun>
                                 <Value>Total General</Value>
                                 <Style>
+                                  <FontSize>11pt</FontSize>
                                   <FontWeight>Bold</FontWeight>
                                 </Style>
                               </TextRun>
@@ -1208,7 +1225,7 @@
                           <RightBorder>
                             <Color>Black</Color>
                           </RightBorder>
-                          <BackgroundColor>Silver</BackgroundColor>
+                          <BackgroundColor>LightGrey</BackgroundColor>
                           <PaddingLeft>2pt</PaddingLeft>
                           <PaddingRight>2pt</PaddingRight>
                           <PaddingTop>2pt</PaddingTop>
@@ -1222,9 +1239,9 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>dsResumenDeCobros</DataSetName>
-            <Top>2.39931in</Top>
+            <Top>2.60764in</Top>
             <Left>0.25917in</Left>
-            <Height>1.19792in</Height>
+            <Height>1.39584in</Height>
             <Width>3.91666in</Width>
             <ZIndex>1</ZIndex>
             <Style>
@@ -1242,6 +1259,7 @@
                   <TextRun>
                     <Value>Cobranza en Montos de Primas</Value>
                     <Style>
+                      <FontSize>12pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -1274,6 +1292,7 @@
                   <TextRun>
                     <Value>Cobranza en Cantidad de Pólizas</Value>
                     <Style>
+                      <FontSize>12pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -1282,7 +1301,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox55</rd:DefaultName>
-            <Top>2.09375in</Top>
+            <Top>2.28819in</Top>
             <Left>0.25917in</Left>
             <Height>0.25in</Height>
             <Width>4.44792in</Width>
@@ -1298,13 +1317,13 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>3.77083in</Height>
+        <Height>4.15973in</Height>
         <Style />
       </Body>
       <Width>11.73785in</Width>
       <Page>
         <PageHeader>
-          <Height>1.35291in</Height>
+          <Height>1.17583in</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -1821,7 +1840,9 @@
                       <Style />
                     </TextRun>
                   </TextRuns>
-                  <Style />
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox3</rd:DefaultName>
@@ -1830,6 +1851,75 @@
               <Height>0.25in</Height>
               <Width>2.22917in</Width>
               <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox69">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Pagina:</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontWeight>Bold</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                        <Color>#000000</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox69</rd:DefaultName>
+              <Top>0.3125in</Top>
+              <Left>8.25174in</Left>
+              <Height>0.25in</Height>
+              <Width>1in</Width>
+              <ZIndex>2</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox70">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Globals!PageNumber.ToString() + "/" + Globals!TotalPages.ToSTring()</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox70</rd:DefaultName>
+              <Top>0.3125in</Top>
+              <Left>9.32118in</Left>
+              <Height>0.25in</Height>
+              <Width>2.41667in</Width>
+              <ZIndex>3</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
