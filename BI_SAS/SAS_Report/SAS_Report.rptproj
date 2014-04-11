@@ -28,6 +28,10 @@
       <Name>dsResumenDeCobros.rsd</Name>
       <FullPath>dsResumenDeCobros.rsd</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>dsDetalleDeCobros.rsd</Name>
+      <FullPath>dsDEtalleDeCobros.rsd</FullPath>
+    </ProjectItem>
   </DataSets>
   <Reports>
     <ProjectItem>
@@ -35,8 +39,12 @@
       <FullPath>SAS_DW_ResumenDeCobros.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Report1.rdl</Name>
-      <FullPath>Report1.rdl</FullPath>
+      <Name>SAS_DW_ResumenDeCancelaciones.rdl</Name>
+      <FullPath>SAS_DW_ResumenDeCancelaciones.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>SAS_DW_DetalleDeCobros.rdl</Name>
+      <FullPath>SAS_DW_DetalleDeCobros.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>

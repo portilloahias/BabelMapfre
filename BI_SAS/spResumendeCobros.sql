@@ -1,7 +1,7 @@
 
 --exec  spRPTResumenDeCobros '2014-04-01',36,2,-1,'ND','ND'
 
-ALTER PROCEDURE spRPTResumenDeCobros
+ALTER PROCEDURE spRPTResumenDeCancelaciones
 (
 		@fechaInicio datetime,
 		@MesesAnalisis int,
