@@ -51,25 +51,37 @@
       <CommandText>spRPTResumenDeCobros</CommandText>
     </Query>
     <Fields>
-      <Field Name="IdMes">
-        <DataField>IdMes</DataField>
+      <Field Name="idMesFila">
+        <DataField>idMesFila</DataField>
         <rd:TypeName>System.Int32</rd:TypeName>
       </Field>
-      <Field Name="MesYear">
-        <DataField>MesYear</DataField>
+      <Field Name="MesYearFila">
+        <DataField>MesYearFila</DataField>
         <rd:TypeName>System.String</rd:TypeName>
       </Field>
-      <Field Name="DescripcionMesYear">
-        <DataField>DescripcionMesYear</DataField>
+      <Field Name="DescripcionMesYearFila">
+        <DataField>DescripcionMesYearFila</DataField>
         <rd:TypeName>System.String</rd:TypeName>
       </Field>
       <Field Name="PolizasActivas">
         <DataField>PolizasActivas</DataField>
         <rd:TypeName>System.Int32</rd:TypeName>
       </Field>
+      <Field Name="idMesColumna">
+        <DataField>idMesColumna</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
       <Field Name="MontoDolares">
         <DataField>MontoDolares</DataField>
         <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="MesYearColumna">
+        <DataField>MesYearColumna</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="DescripcionMesYearColumna">
+        <DataField>DescripcionMesYearColumna</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
       </Field>
     </Fields>
   </DataSet>

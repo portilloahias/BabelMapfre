@@ -1,3 +1,6 @@
+
+--exec  spRPTResumenDeCobros '2014-04-01',36,2,-1,'ND','ND'
+
 ALTER PROCEDURE spRPTResumenDeCobros
 (
 		@fechaInicio datetime,
@@ -8,8 +11,7 @@ ALTER PROCEDURE spRPTResumenDeCobros
 		@CodigoProducto varchar(50)	 
 )
 AS
-BEGIN
-
+BEGIN  
 	--********************************************************************************************
 	--********************************************************************************************
 	--Variables Globales de proceso
@@ -24,8 +26,7 @@ BEGIN
 	SET  @fechaInicioIncripcion = CONVERT(int, (LEFT(CONVERT(VARCHAR(10),  DATEADD(Month,-@MesesAnalisis,@fechaInicio),112),6) + '01')	);
 	SET  @fechaFinInscripcion =   CONVERT(VARCHAR(10),DATEADD(DAY, -1, DATEADD(MONTH,1,CONVERT(datetime,CONVERT(VARCHAR(10),@fechaInicioIncripcion)))),112)
 	SET  @fechaFinRecibos =CONVERT (int, CONVERT(VARCHAR(10),@fechaInicio,112));
-
-
+		  
 
 	--Definir Filtros de Poliza por CIA, SOCIO, Ramo, Producto
 
@@ -52,9 +53,7 @@ BEGIN
 		AND sci.[CodigoCIA] = cia.[CodigoCIA]
 	WHERE ([IdSocio]=@IdSocio OR @IdSocio=-1);
 
-
-
-
+			
 	--********************************************************************************************
 	--********************************************************************************************
 	--Tablas de proceso de registros temporales.
@@ -69,12 +68,16 @@ BEGIN
 							   IdFechaCobroRecibo int);
 
 	--Tabla final de query
-	CREATE TABLE #TmpResumenDeCobros (idMesColumna int,
+	CREATE TABLE #TmpResumenDeCobros (
+									  idMesFila int, 
+	                                  MesYearFila varchar(6),
+									  DescripcionMesYearFila varchar(50),
+
+									  idMesColumna int,
 	                                  MesYearColumna varchar(6),
 									  DescripcionMesYearColumna varchar(50),
-									  idMesColumn int, 
-	                                  MesYearColumna varchar(6),
-									  DescripcionMesYearColumna varchar(50),
+
+
 									  PolizasActivas int,
 									  MontoDolares decimal(24,4)); 
  
@@ -90,8 +93,7 @@ BEGIN
 
 	--Iniciando variables de proceso
 	SET @contador = 1; 
-
-
+			  
 	--Generar Meses 
 	CREATE TABLE #Meses (IdMes int,
 						 MesYear varchar(6),
@@ -125,18 +127,37 @@ BEGIN
 		 SET @contador = @contador + 1;
 		 SET @fechaInicioIncripcion =  CONVERT(int,CONVERT(varchar(10),DATEADD(MONTH,1,CONVERT(datetime,CONVERT(varchar(10),@fechaInicioIncripcion),112)),112));
 		        
-	END
+	END		  
 
-
+	--********************************************************************************************
+	--********************************************************************************************
 	--Generar matrix de Fecha de inscripcion vrs Anyejamiento de polizas
+	DECLARE   @idMesFila int; 
+	DECLARE   @MesYearFila varchar(6);
+	DECLARE   @DescripcionMesYearFila varchar(50);
+
+
+	--Inicializar variables para generar matrix final
 	SET @contador = 1; 
+	SET  @fechaInicioIncripcion = CONVERT(int, (LEFT(CONVERT(VARCHAR(10),  DATEADD(Month,-@MesesAnalisis,@fechaInicio),112),6) + '01')	);
+	SET  @fechaFinInscripcion =   CONVERT(VARCHAR(10),DATEADD(DAY, -1, DATEADD(MONTH,1,CONVERT(datetime,CONVERT(VARCHAR(10),@fechaInicioIncripcion)))),112);
+	
+
 	WHILE  @contador<=@MesesAnalisis
 	BEGIN
+		 	--*********************************************************************
+	        --Limpiar tablas de proceso
+		    TRUNCATE TABLE #tmpPolizasInscritas;
+		    TRUNCATE TABLE #tmpRecibos; 
 
-	       --Limpiar tablas de proceso
-		   TRUNCATE TABLE #tmpPolizasInscritas;
-		   TRUNCATE TABLE #tmpRecibos; 
+			--Definir variables de polizas inscritas
+			 SELECT  @idMesFila=IdMes,
+		             @MesYearFila=MesYear,
+				     @DescripcionMesYearFila=DescripcionMesYear
+			 FROM 	#Meses
+			 WHERE IdMes=@contador;
 
+			--*********************************************************************
 			--Insertar la polizas que fueron inscritas en el periodo definido.
 			INSERT INTO #tmpPolizasInscritas (idpoliza,idFechaBaja)
 			SELECT 	[IdPoliza],
@@ -148,11 +169,7 @@ BEGIN
 				ON pol.IdPlan=pln.IdPlan
 			WHERE pol.[IdCia]=@IdCia  
 			AND pol.[IdFechaInscripcion]  BETWEEN 	@fechaInicioIncripcion AND	 @fechaFinInscripcion;
-
-
-
-
-
+			
 			--Insertar recibos que aplican en el periodo 
 			INSERT INTO #tmpRecibos(MontoDolares,IdFechaCobroRecibo) 
 			SELECT  
@@ -166,43 +183,69 @@ BEGIN
 			GROUP BY   CONVERT(int,left([IdFechaCobroRecibo],6))  ;
 
 
+		
+
+			--*********************************************************************
+			--Generar producto final
+			INSERT INTO #TmpResumenDeCobros (idMesFila,MesYearFila,DescripcionMesYearFila,idMesColumna,MesYearColumna,DescripcionMesYearColumna,PolizasActivas,MontoDolares)
+			SELECT 
+					idMesFila=@idMesFila, 
+					MesYearFila=@MesYearFila,
+					DescripcionMesYearFila=@DescripcionMesYearFila,
+
+
+					idMesColumna= PolizasVigentesPorMes.IdMes,
+					MesYearColumna= PolizasVigentesPorMes.MesYear,
+					DescripcionMesYearColumna=PolizasVigentesPorMes.DescripcionMesYear,
+					
+					PolizasActivas=PolizasVigentesPorMes.PolizasActivas,
+					MontoDolares=rcb.MontoDolares 				   
+			FROM (
+					SELECT 	m.IdMes,
+							m.MesYear,
+							m.DescripcionMesYear,
+							PolizasActivas= SUM( CASE WHEN pol.[IdFechaBaja]=-1 THEN 1
+													  WHEN    convert(int,m.MesYear) < convert(int,left(pol.[IdFechaBaja],6))  THEN 1
+													  ELSE 0 END)
+					FROM #Meses as M
+					LEFT JOIN  #tmpPolizasInscritas as pol
+						ON 	 m.IdMes>=@idMesFila
+					GROUP BY   m.IdMes,
+							   m.MesYear,
+							   m.DescripcionMesYear
+				) PolizasVigentesPorMes
+			LEFT JOIN  #tmpRecibos rcb
+				ON 	PolizasVigentesPorMes.MesYear=left(rcb.IdFechaCobroRecibo,6)
+			ORDER BY	PolizasVigentesPorMes.IdMes
+
+
+
 	     --Aumentar contadores
 		 SET @contador = @contador + 1;
 		 SET @fechaInicioIncripcion =  CONVERT(int,CONVERT(varchar(10),DATEADD(MONTH,1,CONVERT(datetime,CONVERT(varchar(10),@fechaInicioIncripcion),112)),112));
+		 SET  @fechaFinInscripcion =   CONVERT(VARCHAR(10),DATEADD(DAY, -1, DATEADD(MONTH,1,CONVERT(datetime,CONVERT(VARCHAR(10),@fechaInicioIncripcion)))),112);
 	END
-
-	--Generar producto final
-	SELECT PolizasVigentesPorMes.IdMes,
-		   PolizasVigentesPorMes.MesYear,
-		   PolizasVigentesPorMes.DescripcionMesYear,
-		   PolizasVigentesPorMes.PolizasActivas,
-		   rcb.MontoDolares
-	FROM (
-			SELECT 	m.IdMes,
-					m.MesYear,
-					m.DescripcionMesYear,
-					PolizasActivas= SUM( CASE WHEN pol.[IdFechaBaja]=-1 THEN 1
-											  WHEN    convert(int,m.MesYear) < convert(int,left(pol.[IdFechaBaja],6))  THEN 1
-											  ELSE 0 END)
-			FROM #Meses as M
-			CROSS JOIN  #tmpPolizasInscritas as pol
-			GROUP BY   m.IdMes,
-					   m.MesYear,
-					   m.DescripcionMesYear
-		) PolizasVigentesPorMes
-	LEFT JOIN  #tmpRecibos rcb
-		ON 	PolizasVigentesPorMes.MesYear=left(rcb.IdFechaCobroRecibo,6)
-	ORDER BY	PolizasVigentesPorMes.IdMes
-		   
+	   		   
 	
-
+	SELECT 		
+			idMesFila, 
+			MesYearFila,
+			DescripcionMesYearFila,
+			idMesColumna,
+			MesYearColumna,
+			DescripcionMesYearColumna,					
+			PolizasActivas,
+			MontoDolares				   
+	FROM #TmpResumenDeCobros
+	ORDER BY idMesFila,idMesColumna;
 
 
 	 DROP TABLE #tmpFiltroPlan;
 	 DROP TABLE #tmpFiltroSocio
 	 DROP TABLE #tmpPolizasInscritas	
 	 DROP TABLE #Meses;	
-	 DROP TABLE #tmpRecibos;	
+	 DROP TABLE #tmpRecibos;
+	 DROP TABLE #TmpResumenDeCobros;	
  
  
 END		
