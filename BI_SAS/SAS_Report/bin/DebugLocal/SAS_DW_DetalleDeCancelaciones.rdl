@@ -4,7 +4,7 @@
   <DataSets>
     <DataSet Name="dsDetalle">
       <SharedDataSet>
-        <SharedDataSetReference>dsDEtalleDeCobros</SharedDataSetReference>
+        <SharedDataSetReference>dsDetalleDeCancelaciones</SharedDataSetReference>
         <QueryParameters>
           <QueryParameter Name="@IdCia">
             <Value>=Parameters!IdCia.Value</Value>
