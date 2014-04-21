@@ -25,16 +25,16 @@
       <FullPath>dsRamos.rsd</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>dsResumenDeCancelaciones.rsd</Name>
+      <FullPath>dsResumenDeCancelaciones.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>dsResumenDeCobros.rsd</Name>
       <FullPath>dsResumenDeCobros.rsd</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>dsSocio.rsd</Name>
       <FullPath>dsSocio.rsd</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>dsResumenDeCancelaciones.rsd</Name>
-      <FullPath>dsResumenDeCancelaciones.rsd</FullPath>
     </ProjectItem>
   </DataSets>
   <Reports>
@@ -43,12 +43,16 @@
       <FullPath>SAS_DW_DetalleDeCobros.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>SAS_DW_ResumenDeCancelaciones.rdl</Name>
+      <FullPath>SAS_DW_ResumenDeCancelaciones.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>SAS_DW_ResumenDeCobros.rdl</Name>
       <FullPath>SAS_DW_ResumenDeCobros.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>SAS_DW_ResumenDeCancelaciones.rdl</Name>
-      <FullPath>SAS_DW_ResumenDeCancelaciones.rdl</FullPath>
+      <Name>SAS_DW_DetalleDeCancelaciones.rdl</Name>
+      <FullPath>SAS_DW_DetalleDeCancelaciones.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>

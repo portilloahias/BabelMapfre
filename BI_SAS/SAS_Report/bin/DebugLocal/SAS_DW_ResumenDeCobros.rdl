@@ -371,7 +371,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -973,22 +972,57 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>MontoDolares1</rd:DefaultName>
+                          <ActionInfo>
+                            <Actions>
+                              <Action>
+                                <Drillthrough>
+                                  <ReportName>SAS_DW_DetalleDeCobros</ReportName>
+                                  <Parameters>
+                                    <Parameter Name="IdCia">
+                                      <Value>=Parameters!CIA.Value</Value>
+                                    </Parameter>
+                                    <Parameter Name="IdSocio">
+                                      <Value>=Parameters!IdSocio.Value</Value>
+                                    </Parameter>
+                                    <Parameter Name="CodigoRamo">
+                                      <Value>=Parameters!CodigoRamo.Value</Value>
+                                    </Parameter>
+                                    <Parameter Name="CodigoProducto">
+                                      <Value>=Parameters!CodigoProducto.Value</Value>
+                                    </Parameter>
+                                    <Parameter Name="MesYearFila">
+                                      <Value>=Fields!MesYearFila.Value</Value>
+                                    </Parameter>
+                                    <Parameter Name="DesMesYearColumna">
+                                      <Value>=Fields!MesYearColumna.Value</Value>
+                                    </Parameter>
+                                    <Parameter Name="DesMesYearFila">
+                                      <Value>=Fields!DescripcionMesYearFila.Value</Value>
+                                    </Parameter>
+                                    <Parameter Name="DesMesYearColumna">
+                                      <Value>=Fields!DescripcionMesYearColumna.Value</Value>
+                                    </Parameter>
+                                    <Parameter Name="DesCia">
+                                      <Value>=Parameters!CIA.Label</Value>
+                                    </Parameter>
+                                    <Parameter Name="DesSocio">
+                                      <Value>=Parameters!IdSocio.Label</Value>
+                                    </Parameter>
+                                    <Parameter Name="DesRamo">
+                                      <Value>=Parameters!CodigoRamo.Label</Value>
+                                    </Parameter>
+                                    <Parameter Name="DesProducto">
+                                      <Value>=Parameters!CodigoProducto.Label</Value>
+                                    </Parameter>
+                                  </Parameters>
+                                </Drillthrough>
+                              </Action>
+                            </Actions>
+                          </ActionInfo>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <TopBorder>
-                              <Color>Black</Color>
-                            </TopBorder>
-                            <BottomBorder>
-                              <Color>Black</Color>
-                            </BottomBorder>
-                            <LeftBorder>
-                              <Color>Black</Color>
-                            </LeftBorder>
-                            <RightBorder>
-                              <Color>Black</Color>
-                            </RightBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>

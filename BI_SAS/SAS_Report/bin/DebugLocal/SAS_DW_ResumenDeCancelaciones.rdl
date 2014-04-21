@@ -1383,7 +1383,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Resumen de Cobros</Value>
+                      <Value>Resumen de Cancelaciones</Value>
                       <Style>
                         <FontWeight>Bold</FontWeight>
                       </Style>
