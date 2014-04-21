@@ -114,7 +114,7 @@
     </DataSet>
     <DataSet Name="dsResumenDeCobros">
       <SharedDataSet>
-        <SharedDataSetReference>dsResumenDeCobros</SharedDataSetReference>
+        <SharedDataSetReference>dsResumenDeCancelaciones</SharedDataSetReference>
         <QueryParameters>
           <QueryParameter Name="@fechaInicio">
             <Value>=Parameters!fechaInicio.Value</Value>
@@ -155,16 +155,16 @@
           <DataField>DescripcionMesYearFila</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="PolizasActivas">
-          <DataField>PolizasActivas</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
         <Field Name="MontoDolares">
           <DataField>MontoDolares</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="idMesColumna">
           <DataField>idMesColumna</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="PolizasBaja">
+          <DataField>PolizasBaja</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="MesYearColumna">
@@ -314,22 +314,57 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>MontoDolares1</rd:DefaultName>
+                          <ActionInfo>
+                            <Actions>
+                              <Action>
+                                <Drillthrough>
+                                  <ReportName>SAS_DW_DetalleDeCobros</ReportName>
+                                  <Parameters>
+                                    <Parameter Name="IdCia">
+                                      <Value>=Parameters!CIA.Value</Value>
+                                    </Parameter>
+                                    <Parameter Name="IdSocio">
+                                      <Value>=Parameters!IdSocio.Value</Value>
+                                    </Parameter>
+                                    <Parameter Name="CodigoRamo">
+                                      <Value>=Parameters!CodigoRamo.Value</Value>
+                                    </Parameter>
+                                    <Parameter Name="CodigoProducto">
+                                      <Value>=Parameters!CodigoProducto.Value</Value>
+                                    </Parameter>
+                                    <Parameter Name="MesYearFila">
+                                      <Value>=Fields!MesYearFila.Value</Value>
+                                    </Parameter>
+                                    <Parameter Name="MesYearColumna">
+                                      <Value>=Fields!MesYearColumna.Value</Value>
+                                    </Parameter>
+                                    <Parameter Name="DesMesYearFila">
+                                      <Value>=Fields!DescripcionMesYearFila.Value</Value>
+                                    </Parameter>
+                                    <Parameter Name="DesMesYearColumna">
+                                      <Value>=Fields!DescripcionMesYearColumna.Value</Value>
+                                    </Parameter>
+                                    <Parameter Name="DesCia">
+                                      <Value>=Parameters!CIA.Label</Value>
+                                    </Parameter>
+                                    <Parameter Name="DesSocio">
+                                      <Value>=Parameters!IdSocio.Label</Value>
+                                    </Parameter>
+                                    <Parameter Name="DesRamo">
+                                      <Value>=Parameters!CodigoRamo.Label</Value>
+                                    </Parameter>
+                                    <Parameter Name="DesProducto">
+                                      <Value>=Parameters!CodigoProducto.Label</Value>
+                                    </Parameter>
+                                  </Parameters>
+                                </Drillthrough>
+                              </Action>
+                            </Actions>
+                          </ActionInfo>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <TopBorder>
-                              <Color>Black</Color>
-                            </TopBorder>
-                            <BottomBorder>
-                              <Color>Black</Color>
-                            </BottomBorder>
-                            <LeftBorder>
-                              <Color>Black</Color>
-                            </LeftBorder>
-                            <RightBorder>
-                              <Color>Black</Color>
-                            </RightBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -927,7 +962,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=iif(Sum(Fields!PolizasActivas.Value)=0,String.Empty,Sum(Fields!PolizasActivas.Value).ToString())</Value>
+                                  <Value>=iif(Sum(Fields!PolizasBaja.Value)=0,String.Empty,Sum(Fields!PolizasBaja.Value).ToString())</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -975,7 +1010,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!PolizasActivas.Value)</Value>
+                                  <Value>=Sum(Fields!PolizasBaja.Value)</Value>
                                   <Style>
                                     <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>

@@ -982,7 +982,7 @@
                                 <TextRun>
                                   <Value>=Fields!FechaInscripcion.Value</Value>
                                   <Style>
-                                    <Format>dd/mm/yyyy</Format>
+                                    <Format>dd/MM/yyyy</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1027,7 +1027,7 @@
                                 <TextRun>
                                   <Value>=Fields!FechaBaja.Value</Value>
                                   <Style>
-                                    <Format>dd/mm/yyyy</Format>
+                                    <Format>dd/MM/yyyy</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1358,7 +1358,7 @@
             <Top>0.10417in</Top>
             <Left>0.125in</Left>
             <Height>0.5in</Height>
-            <Width>18.46426in</Width>
+            <Width>18.46425in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
