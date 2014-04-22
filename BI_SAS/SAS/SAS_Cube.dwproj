@@ -6,30 +6,98 @@
     <Name>SAS.database</Name>
     <FullPath>SAS.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>cubeDWSASRegional.cube</Name>
+      <FullPath>cubeDWSASRegional.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>cubeDWSASRegional.partitions</Name>
+          <FullPath>cubeDWSASRegional.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
   <Dimensions>
     <ProjectItem>
-      <Name>DimPóliza.dim</Name>
-      <FullPath>DimPóliza.dim</FullPath>
+      <Name>Dim CIA.dim</Name>
+      <FullPath>Dim CIA.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>DimSucursales.dim</Name>
-      <FullPath>DimSucursales.dim</FullPath>
+      <Name>Dim Fechas De Inicio De Vigencias.dim</Name>
+      <FullPath>Dim Fechas De Inicio De Vigencias.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>DimRecibos.dim</Name>
-      <FullPath>DimRecibos.dim</FullPath>
+      <Name>Dim Fechas De Anulaciones De Recibos.dim</Name>
+      <FullPath>Dim Fechas De Anulaciones De Recibos.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>DimSocios.dim</Name>
-      <FullPath>DimSocios.dim</FullPath>
+      <Name>Dim Fechas De Bajas.dim</Name>
+      <FullPath>Dim Fechas De Bajas.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>DimMonedas.dim</Name>
-      <FullPath>DimMonedas.dim</FullPath>
+      <Name>Dim Fechas De Cobros De Recibos.dim</Name>
+      <FullPath>Dim Fechas De Cobros De Recibos.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>DimCia.dim</Name>
-      <FullPath>DimCia.dim</FullPath>
+      <Name>Dim Fechas De Fin De Vigencias.dim</Name>
+      <FullPath>Dim Fechas De Fin De Vigencias.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Fechas De Inscripciones.dim</Name>
+      <FullPath>Dim Fechas De Inscripciones.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Fechas De Nacimientos.dim</Name>
+      <FullPath>Dim Fechas De Nacimientos.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Fechas De Renovaciones.dim</Name>
+      <FullPath>Dim Fechas De Renovaciones.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Fechas De Vencimientos De Recibos.dim</Name>
+      <FullPath>Dim Fechas De Vencimientos De Recibos.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Monedas.dim</Name>
+      <FullPath>Dim Monedas.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Planes.dim</Name>
+      <FullPath>Dim Planes.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Pólizas.dim</Name>
+      <FullPath>Dim Pólizas.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Recibos.dim</Name>
+      <FullPath>Dim Recibos.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Socios.dim</Name>
+      <FullPath>Dim Socios.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Sucursales.dim</Name>
+      <FullPath>Dim Sucursales.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Ter.dim</Name>
+      <FullPath>Dim Ter.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Usuarios.dim</Name>
+      <FullPath>Dim Usuarios.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Ubicación Geográfica de Sucursales.dim</Name>
+      <FullPath>Dim Ubicación Geográfica de Sucursales.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Ubicación Geográfica de Clientes.dim</Name>
+      <FullPath>Dim Ubicación Geográfica de Clientes.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>

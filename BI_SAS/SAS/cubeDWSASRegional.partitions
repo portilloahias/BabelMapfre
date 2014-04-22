@@ -1,0 +1,45 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2d6f254d-279e-4c95-8ee4-128e691d2c50" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>cubeDWSASRegional</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Fact Poliza</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="95123062-8ffe-4508-ad7b-471e0e32ffb8">
+          <ID>Fact Poliza</ID>
+          <Name>Fact Poliza</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="94555702-9d37-413f-ae5d-c07c271cc3ca">
+            <DataSourceViewID>dsViewDWSAS</DataSourceViewID>
+            <TableID>dbo_FactPoliza</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Recibo</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="e83cec4f-5fb0-43b8-9721-465bf5dd26ed">
+          <ID>Fact Recibo</ID>
+          <Name>Fact Recibo</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d3d286cd-c223-483f-b2f2-f09fe0e19b46">
+            <DataSourceViewID>dsViewDWSAS</DataSourceViewID>
+            <TableID>dbo_FactRecibo</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

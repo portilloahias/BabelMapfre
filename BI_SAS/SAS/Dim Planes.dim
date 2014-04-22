@@ -1,0 +1,252 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e404c2e2-1e4b-4575-8fab-0be8d256a861" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DimPlan</ID>
+  <Name>Dim Planes</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-350" scrolltop="-3876" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="5027" y="13044" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="DimPlan" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3836" height="4842" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000fc0e0000ea120000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimPlan" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-350</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3876</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="2578e8a1-7e2a-448a-8cc1-e770d0085866">
+    <DataSourceViewID>dsViewDWSAS</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="414df127-6849-490e-a7ac-fbead50544a7">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="a04f8c95-27c4-4752-b7b8-bf1ca6c6ea34">
+      <ID>Id Plan</ID>
+      <Name>Id Plan</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7e1f19a5-88aa-45fb-8dfd-5d339533a349">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="00968616-7486-4d73-9ac9-5f824d330158">
+            <TableID>dbo_DimPlan</TableID>
+            <ColumnID>IdPlan</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="6b5af9f5-77e5-44a2-88d7-2cea37c278f6">
+          <AttributeID>Codigo CIA</AttributeID>
+          <Name>Codigo CIA</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1ec58fdf-48ed-4d20-a723-8b06c1a1b555">
+          <AttributeID>Codigo Ramo</AttributeID>
+          <Name>Codigo Ramo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c391e001-34bd-45b7-aaf0-c9f120ecadc5">
+          <AttributeID>Descripcion Ramo</AttributeID>
+          <Name>Descripcion Ramo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8c9e44c7-cf0e-449e-820d-a124c6434c56">
+          <AttributeID>Codigo Producto</AttributeID>
+          <Name>Codigo Producto</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1304edc0-6a4b-460b-95b5-97f5a97c8d58">
+          <AttributeID>Descripcion Producto</AttributeID>
+          <Name>Descripcion Producto</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2fe096e9-7431-4744-9459-99dfe3295506">
+          <AttributeID>Codigo Plan</AttributeID>
+          <Name>Codigo Plan</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c2206d70-1cae-4bf0-b6ff-4a900e6dfd22">
+          <AttributeID>Descripcion Plan</AttributeID>
+          <Name>Descripcion Plan</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ac40f3e8-68e6-41a1-bf33-19999835d223">
+          <AttributeID>Descripcion Moneda</AttributeID>
+          <Name>Descripcion Moneda</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c0755acc-636a-4437-85b7-93d8a80eece6">
+      <ID>Codigo CIA</ID>
+      <Name>Codigo CIA</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="43512e66-6af7-4cc2-866f-26555df9e4d9">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0f2cecf6-5363-41ea-93dd-feb91c8f0f3a">
+            <TableID>dbo_DimPlan</TableID>
+            <ColumnID>CodigoCIA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e2e0d61d-3f6f-4b3f-953a-121d4623e8bf">
+      <ID>Codigo Ramo</ID>
+      <Name>Codigo Ramo</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ef97aa23-ac28-4132-9941-4f9786a9c4bb">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7e63ea19-bfeb-4a6a-ad5a-b64337b7940b">
+            <TableID>dbo_DimPlan</TableID>
+            <ColumnID>CodigoRamo</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="eb3acdc7-5a6e-445f-9b79-03d4456bac4b">
+      <ID>Descripcion Ramo</ID>
+      <Name>Descripcion Ramo</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f210884e-7ae0-4234-97ae-d9167f387963">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f7d81f55-a331-4433-9dd4-d5a8200d666e">
+            <TableID>dbo_DimPlan</TableID>
+            <ColumnID>DescripcionRamo</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ebc33ecd-4718-4eb3-8a9d-0985a605f9fd">
+      <ID>Codigo Producto</ID>
+      <Name>Codigo Producto</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a1166dfb-6010-48f7-9f89-9c41a4276535">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="43f7a284-43de-492d-b60a-00851c3e7b06">
+            <TableID>dbo_DimPlan</TableID>
+            <ColumnID>CodigoProducto</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fa45cce9-07f5-45ee-8abe-8b98fdee9892">
+      <ID>Descripcion Producto</ID>
+      <Name>Descripcion Producto</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0e4fa2b7-9d77-40b1-bc7a-709323f5ab61">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7098d5fa-cd2f-4fb5-a373-352df4dec590">
+            <TableID>dbo_DimPlan</TableID>
+            <ColumnID>DescripcionProducto</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a32984ce-601e-40eb-a009-e6716ee43aa8">
+      <ID>Codigo Plan</ID>
+      <Name>Codigo Plan</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9ac55faa-5ddf-42d5-b800-234213e9c7fa">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c252ac45-bef6-41d0-9a9f-8df88b7ac8ab">
+            <TableID>dbo_DimPlan</TableID>
+            <ColumnID>CodigoPlan</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a5200fe0-9cbc-4dd7-91a7-abfbf941dafe">
+      <ID>Descripcion Plan</ID>
+      <Name>Descripcion Plan</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="99c01c0e-8b61-4fb2-8fd5-69898db093ea">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e9a6efe4-6ba7-464b-9ce2-aa953491d383">
+            <TableID>dbo_DimPlan</TableID>
+            <ColumnID>DescripcionPlan</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bf6abc5f-14ca-4686-8962-ef2693af66b4">
+      <ID>Descripcion Moneda</ID>
+      <Name>Descripcion Moneda</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2568cbf6-2108-4cfb-82ae-836d8d0edebc">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="98bb52c6-acb8-4526-91ce-618e93c022cd">
+            <TableID>dbo_DimPlan</TableID>
+            <ColumnID>DescripcionMoneda</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+  </Attributes>
+</Dimension>

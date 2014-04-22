@@ -1,0 +1,176 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="df5e2afc-645b-4dec-a57a-2f39049307cd" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DimRecibos</ID>
+  <Name>Dim Recibos</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-945" scrolltop="-4736" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="5027" y="13044" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="DimRecibo" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3096" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000180c0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimRecibo" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-945</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4736</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="b1b720dd-d9f9-4242-b9e1-24f89bb5fdbb">
+    <DataSourceViewID>dsViewDWSAS</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="c1e20f5d-a47a-4ba8-bcc5-eeb72779509a">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="18e96154-cb33-4bc1-b9f8-f4d3c4827d7b">
+      <ID>Id Recibo</ID>
+      <Name>Id Recibo</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2229d485-8e70-4793-a192-5d354f95c53f">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a449aca2-0187-4976-8f26-c70726418253">
+            <TableID>dbo_DimRecibo</TableID>
+            <ColumnID>IdRecibo</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="3dacd12d-1172-4c21-a8f6-8c10d8a9c229">
+          <AttributeID>Codigo Recibo</AttributeID>
+          <Name>Codigo Recibo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2b7515c3-3177-4596-b7a7-8577e12b6021">
+          <AttributeID>Numero Recibo</AttributeID>
+          <Name>Numero Recibo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="909056ca-4271-43d7-9524-ccbf06039644">
+          <AttributeID>Numero Cuota</AttributeID>
+          <Name>Numero Cuota</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7beb2783-3037-42a0-b6d4-6b1cc7f6b1ff">
+          <AttributeID>Estado Recibo</AttributeID>
+          <Name>Estado Recibo</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e233a187-ed85-4126-ab0f-08fc9b09ac2b">
+      <ID>Codigo Recibo</ID>
+      <Name>Codigo Recibo</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="44d8307d-1992-4927-aa2a-b1dc56adec75">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a956307e-83ac-442f-8eaf-2ce937187601">
+            <TableID>dbo_DimRecibo</TableID>
+            <ColumnID>CodigoRecibo</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2b75a3ed-b400-4ba6-86b7-ef2d043c5163">
+      <ID>Numero Recibo</ID>
+      <Name>Numero Recibo</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1dfe741a-0970-487b-b295-b8cb3a57e28b">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="966dc631-79c8-4a53-bb38-866f54ca407d">
+            <TableID>dbo_DimRecibo</TableID>
+            <ColumnID>NumeroRecibo</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="98048875-fcec-4c2f-9448-d603163102c8">
+      <ID>Numero Cuota</ID>
+      <Name>Numero Cuota</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3f3e9c69-9de7-4a0b-b9ed-f1f5024c1e65">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9978e9b4-1588-4ed8-ad96-826545b1d951">
+            <TableID>dbo_DimRecibo</TableID>
+            <ColumnID>NumeroCuota</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e5779390-0f73-469a-820c-2b72045f0684">
+      <ID>Estado Recibo</ID>
+      <Name>Estado Recibo</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d3249481-b04e-4cba-91f0-a4876d69681b">
+          <DataType>WChar</DataType>
+          <DataSize>150</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b5554a49-47c0-4022-8018-a06da0fd869e">
+            <TableID>dbo_DimRecibo</TableID>
+            <ColumnID>EstadoRecibo</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+  </Attributes>
+</Dimension>

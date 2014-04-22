@@ -1,0 +1,194 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>SAS_Regional</Database>
+    <Server>LARISA\sql2008</Server>
+    <ConnectionString>DataSource=LARISA\sql2008;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>5HkFlQPTSdMnLnDwskT9WQ==4/22/2014 2:07:13 PM4/22/2014 8:43:27 AM</TimeStamp>
+        <ID>
+          <String>dsDWSAS</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>x694FtZJBqVa7zQBSP8Qqg==4/22/2014 10:00:51 AM4/22/2014 9:23:32 AM</TimeStamp>
+        <ID>
+          <String>dsViewDWSAS</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Oirr/vnyTqlGAuilr2MkBg==4/22/2014 1:55:53 PM4/22/2014 9:26:45 AM</TimeStamp>
+        <ID>
+          <String>DimPóliza</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>yk+gVtgwz1mhDfUPzM5MVA==4/22/2014 1:59:53 PM4/22/2014 9:27:29 AM</TimeStamp>
+        <ID>
+          <String>DimSucursales</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>7hkacPFcoV332RvT+2NPGg==4/22/2014 1:59:53 PM4/22/2014 9:28:48 AM</TimeStamp>
+        <ID>
+          <String>DimRecibos</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>LkgduV8sjo9Quw/ewxA0sQ==4/22/2014 1:59:53 PM4/22/2014 9:29:14 AM</TimeStamp>
+        <ID>
+          <String>DimSocios</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>gB9oezvW5/CwjIYKXhFFrg==4/22/2014 1:59:53 PM4/22/2014 9:30:03 AM</TimeStamp>
+        <ID>
+          <String>DimMonedas</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>OMZfHs73sskdPt5nHvmrZQ==4/22/2014 10:04:22 AM4/22/2014 9:30:23 AM</TimeStamp>
+        <ID>
+          <String>DimCia</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>pv8G4ksKITKVGdIR1Xjlyw==4/22/2014 10:53:21 AM4/22/2014 9:33:30 AM</TimeStamp>
+        <ID>
+          <String>DimFechasDeCobrosRecibos</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Un9q0MX+H2NfUhWPlwzJDQ==4/22/2014 11:34:04 AM4/22/2014 9:33:56 AM</TimeStamp>
+        <ID>
+          <String>DimFechasDeBajas</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>BhgEAgUskq2pFK+te4D1XQ==4/22/2014 11:31:19 AM4/22/2014 9:34:25 AM</TimeStamp>
+        <ID>
+          <String>DimFechasDeAnulacionesDeRecibos</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>P/uoofq64KZywnnH4OV+FQ==4/22/2014 10:54:09 AM4/22/2014 9:35:01 AM</TimeStamp>
+        <ID>
+          <String>DimFechasDeRenovaciones</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>hiV17y1DMh1PcV5eHy4KuA==4/22/2014 10:54:09 AM4/22/2014 9:35:25 AM</TimeStamp>
+        <ID>
+          <String>DimFechasDeInscripciones</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>+JaLNcict+xz0XXp2e3KrA==4/22/2014 10:53:30 AM4/22/2014 9:35:51 AM</TimeStamp>
+        <ID>
+          <String>DimFechasDeFinDeVigencias</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>hCV73y2KSqS2JRG3c5x4BA==4/22/2014 11:39:30 AM4/22/2014 9:37:27 AM</TimeStamp>
+        <ID>
+          <String>DimFechasDeVencimientosDeRecibos</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>TFqNEhtcXQpvXBT1etLvvw==4/22/2014 2:15:33 PM4/22/2014 9:38:27 AM</TimeStamp>
+        <ID>
+          <String>DimTer</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>RfpTxCxMaLiqGChmf+BgxA==4/22/2014 1:55:51 PM4/22/2014 9:38:56 AM</TimeStamp>
+        <ID>
+          <String>DimPlan</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Q05cCwB+NrwHZoPIxmXrgg==4/22/2014 1:59:53 PM4/22/2014 9:39:20 AM</TimeStamp>
+        <ID>
+          <String>DimUsuarios</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>2TCtQBOTVQn7QlSx+6UIIw==4/22/2014 1:59:53 PM4/22/2014 10:01:32 AM</TimeStamp>
+        <ID>
+          <String>Dim Ubicación Geográfica de Sucursales</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>B/FgnWiibMxYQY6FGnVbsA==4/22/2014 1:59:53 PM4/22/2014 10:02:01 AM</TimeStamp>
+        <ID>
+          <String>Dim Ubicación Geográfica de Clientes</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>H6YPKU5lWmK6CjcoRxfEDA==4/22/2014 11:25:24 AM4/22/2014 9:36:18 AM</TimeStamp>
+        <ID>
+          <String>DimFechasDeNacimientos</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>hsv/WOycF8+ZLQf6QbsG1Q==4/22/2014 11:31:35 AM4/22/2014 9:36:46 AM</TimeStamp>
+        <ID>
+          <String>DimFechasDe InicioDeVigencias</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>SUEiAnLs8Q3QjNi9kW6rXQ==4/22/2014 2:00:01 PM4/22/2014 1:59:52 PMudFjd4RobRzEDG4gzPNl8A==4/22/2014 1:59:52 PM4/22/2014 1:59:52 PM</TimeStamp>
+        <ID>
+          <String>cubeDWSASRegional</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>tVxe3xCcjF6c4AcWp8GpbA==4/21/2014 3:44:15 PM4/21/2014 3:44:01 PM</TimeStamp>
+      <ID>
+        <String>SAS_Regional</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2014-04-22T20:15:40.916667Z</LastDeployed>
+</DeploymentSnapshot>

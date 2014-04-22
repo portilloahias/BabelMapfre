@@ -1,0 +1,214 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3581f04f-5b79-433c-ae09-f957c8a095fc" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DimSocios</ID>
+  <Name>Dim Socios</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-350" scrolltop="-4525" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="5027" y="13044" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="DimSocio" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4286" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000be1000009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimSocio" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-350</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4525</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="5b826f2b-6b21-45d8-a911-81f707263779">
+    <DataSourceViewID>dsViewDWSAS</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="cdb45e38-30e5-4ffd-8b20-c1470ce49f7b">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="15ae06ae-4e0b-4698-a534-d0097247aef1">
+      <ID>Id Socio</ID>
+      <Name>Id Socio</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="13ded69d-c415-48bf-8e07-4ac0c94c0e8f">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e01ad248-fc13-40fd-8fbd-43e924f6aab9">
+            <TableID>dbo_DimSocio</TableID>
+            <ColumnID>IdSocio</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="d2974823-247e-4683-be4c-71b3ced9d9e0">
+          <AttributeID>Codigo Socio</AttributeID>
+          <Name>Codigo Socio</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4027f2c1-e958-4042-8a5a-eaad99741463">
+          <AttributeID>Nombre Socio</AttributeID>
+          <Name>Nombre Socio</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="066a01ba-d204-4712-8302-460cfe58754a">
+          <AttributeID>Codigo Global Corp</AttributeID>
+          <Name>Codigo Global Corp</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8cbe9159-b8b9-4ecc-aeaa-00eb6e5d1743">
+          <AttributeID>Nombre Socio Global Corp</AttributeID>
+          <Name>Nombre Socio Global Corp</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="36a791ce-f925-4b0f-a86e-35e973d79c78">
+          <AttributeID>Tipo Socio</AttributeID>
+          <Name>Tipo Socio</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e7ed8b9b-d344-4ce5-b57a-fe944016caa5">
+          <AttributeID>Codigo Cia</AttributeID>
+          <Name>Codigo Cia</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="80c7fe21-05e2-44da-a3ac-58843a2c000a">
+      <ID>Codigo Socio</ID>
+      <Name>Codigo Socio</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fdf19d76-3e24-4ed9-b400-1ce1e5457507">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fbec9d15-1a50-4064-bf87-5080d5f92823">
+            <TableID>dbo_DimSocio</TableID>
+            <ColumnID>CodigoSocio</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3f97a2a4-109c-45ee-8325-d99c1e660fd3">
+      <ID>Nombre Socio</ID>
+      <Name>Nombre Socio</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="523f0a13-8a8a-4d84-997f-cad69822859d">
+          <DataType>WChar</DataType>
+          <DataSize>150</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fc80652c-cd87-47ed-aa76-20410a0832c7">
+            <TableID>dbo_DimSocio</TableID>
+            <ColumnID>NombreSocio</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9d780b53-1a07-46b1-b408-62bd49d21cf4">
+      <ID>Codigo Global Corp</ID>
+      <Name>Codigo Global Corp</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3660adb5-e120-4383-bf41-ac3d3b57784b">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1e97c14d-ddc6-450f-980e-f86f707b5c19">
+            <TableID>dbo_DimSocio</TableID>
+            <ColumnID>CodigoGlobalCorp</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f56ce0a4-331a-4049-89df-c72e0ea5d035">
+      <ID>Nombre Socio Global Corp</ID>
+      <Name>Nombre Socio Global Corp</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ed07b35d-1b66-4792-b1eb-d47ff521f860">
+          <DataType>WChar</DataType>
+          <DataSize>150</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3f5edc9e-87dc-45fe-89e0-2e19da7d91fd">
+            <TableID>dbo_DimSocio</TableID>
+            <ColumnID>NombreSocioGlobalCorp</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9ec4a71b-e6a4-472a-98d1-dd52894e2073">
+      <ID>Tipo Socio</ID>
+      <Name>Tipo Socio</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8afd9d5d-e5b2-452a-839d-004ba7bdcc4f">
+          <DataType>WChar</DataType>
+          <DataSize>150</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1b7f656b-cf4d-49ad-bf7d-ac7b57b25a2a">
+            <TableID>dbo_DimSocio</TableID>
+            <ColumnID>TipoSocio</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0111470b-667b-4cd4-8776-1988c59d7be8">
+      <ID>Codigo Cia</ID>
+      <Name>Codigo Cia</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="322b94f1-e8c7-4c53-8508-9043bd38095d">
+          <DataType>WChar</DataType>
+          <DataSize>5</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="034da215-9b6c-4f7d-8357-2f514b1cbca7">
+            <TableID>dbo_DimSocio</TableID>
+            <ColumnID>CodigoCia</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+  </Attributes>
+</Dimension>

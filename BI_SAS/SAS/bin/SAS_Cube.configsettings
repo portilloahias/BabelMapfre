@@ -1,0 +1,104 @@
+﻿<ConfigurationSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Database>
+    <DataSources>
+      <DataSource>
+        <ID>dsDWSAS</ID>
+        <ConnectionString>Provider=SQLNCLI10.1;Data Source=LARISA\SQL2008;Integrated Security=SSPI;Initial Catalog=DW_SAS</ConnectionString>
+        <ImpersonationInfo>
+          <ImpersonationMode>ImpersonateAccount</ImpersonationMode>
+          <Account>LARISA\LAlvarez</Account>
+          <ImpersonationInfoSecurity>PasswordRemoved</ImpersonationInfoSecurity>
+        </ImpersonationInfo>
+      </DataSource>
+    </DataSources>
+    <Dimensions>
+      <Dimension>
+        <ID>DimPóliza</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimSucursales</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimRecibos</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimSocios</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimMonedas</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimCia</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimFechasDeCobrosRecibos</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimFechasDeBajas</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimFechasDeAnulacionesDeRecibos</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimFechasDeRenovaciones</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimFechasDeInscripciones</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimFechasDeFinDeVigencias</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimFechasDeVencimientosDeRecibos</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimTer</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimPlan</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimUsuarios</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Ubicación Geográfica de Sucursales</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Ubicación Geográfica de Clientes</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimFechasDeNacimientos</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimFechasDe InicioDeVigencias</ID>
+      </Dimension>
+    </Dimensions>
+    <Cubes>
+      <Cube>
+        <ID>cubeDWSASRegional</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Poliza</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Poliza</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fact Recibo</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Recibo</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+    </Cubes>
+    <DataSourceImpersonationInfo>
+      <ImpersonationMode>Default</ImpersonationMode>
+      <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
+    </DataSourceImpersonationInfo>
+  </Database>
+</ConfigurationSettings>
