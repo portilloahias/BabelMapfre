@@ -5,6 +5,8 @@ Project("{D183A3D8-5FD8-494B-B014-37F57B35E655}") = "ETL_SAS", "ETL_SAS\ETL_SAS.
 EndProject
 Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "SAS_Report", "SAS_Report\SAS_Report.rptproj", "{F8C01013-B833-4EC9-98EF-D0475268EEB1}"
 EndProject
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "SAS_Cube", "SAS\SAS_Cube.dwproj", "{1B15A5D1-562A-423E-9F3B-2C03B809B77F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Default = Debug|Default
@@ -31,6 +33,18 @@ Global
 		{F8C01013-B833-4EC9-98EF-D0475268EEB1}.Release|Default.ActiveCfg = Release
 		{F8C01013-B833-4EC9-98EF-D0475268EEB1}.Release|Default.Build.0 = Release
 		{F8C01013-B833-4EC9-98EF-D0475268EEB1}.Release|Default.Deploy.0 = Release
+		{1B15A5D1-562A-423E-9F3B-2C03B809B77F}.Debug|Default.ActiveCfg = Development
+		{1B15A5D1-562A-423E-9F3B-2C03B809B77F}.Debug|Default.Build.0 = Development
+		{1B15A5D1-562A-423E-9F3B-2C03B809B77F}.Debug|Default.Deploy.0 = Development
+		{1B15A5D1-562A-423E-9F3B-2C03B809B77F}.DebugLocal|Default.ActiveCfg = Development
+		{1B15A5D1-562A-423E-9F3B-2C03B809B77F}.DebugLocal|Default.Build.0 = Development
+		{1B15A5D1-562A-423E-9F3B-2C03B809B77F}.DebugLocal|Default.Deploy.0 = Development
+		{1B15A5D1-562A-423E-9F3B-2C03B809B77F}.Development|Default.ActiveCfg = Development
+		{1B15A5D1-562A-423E-9F3B-2C03B809B77F}.Development|Default.Build.0 = Development
+		{1B15A5D1-562A-423E-9F3B-2C03B809B77F}.Development|Default.Deploy.0 = Development
+		{1B15A5D1-562A-423E-9F3B-2C03B809B77F}.Release|Default.ActiveCfg = Development
+		{1B15A5D1-562A-423E-9F3B-2C03B809B77F}.Release|Default.Build.0 = Development
+		{1B15A5D1-562A-423E-9F3B-2C03B809B77F}.Release|Default.Deploy.0 = Development
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
