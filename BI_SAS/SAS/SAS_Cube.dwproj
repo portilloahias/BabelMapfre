@@ -24,40 +24,40 @@
       <FullPath>Dim CIA.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Dim Fechas De Inicio De Vigencias.dim</Name>
-      <FullPath>Dim Fechas De Inicio De Vigencias.dim</FullPath>
+      <Name>Dim Fecha Anulación Recibo.dim</Name>
+      <FullPath>Dim Fecha Anulación Recibo.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Dim Fechas De Anulaciones De Recibos.dim</Name>
-      <FullPath>Dim Fechas De Anulaciones De Recibos.dim</FullPath>
+      <Name>Dim Fecha Baja.dim</Name>
+      <FullPath>Dim Fecha Baja.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Dim Fechas De Bajas.dim</Name>
-      <FullPath>Dim Fechas De Bajas.dim</FullPath>
+      <Name>Dim Fecha Cobro Recibo.dim</Name>
+      <FullPath>Dim Fecha Cobro Recibo.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Dim Fechas De Cobros De Recibos.dim</Name>
-      <FullPath>Dim Fechas De Cobros De Recibos.dim</FullPath>
+      <Name>Dim Fecha Fin Vigencia.dim</Name>
+      <FullPath>Dim Fecha Fin Vigencia.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Dim Fechas De Fin De Vigencias.dim</Name>
-      <FullPath>Dim Fechas De Fin De Vigencias.dim</FullPath>
+      <Name>Dim Fecha Inicio Vigencia.dim</Name>
+      <FullPath>Dim Fecha Inicio Vigencia.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Dim Fechas De Inscripciones.dim</Name>
-      <FullPath>Dim Fechas De Inscripciones.dim</FullPath>
+      <Name>Dim Fecha Inscripción.dim</Name>
+      <FullPath>Dim Fecha Inscripción.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Dim Fechas De Nacimientos.dim</Name>
-      <FullPath>Dim Fechas De Nacimientos.dim</FullPath>
+      <Name>Dim Fecha Nacimiento.dim</Name>
+      <FullPath>Dim Fecha Nacimiento.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Dim Fechas De Renovaciones.dim</Name>
-      <FullPath>Dim Fechas De Renovaciones.dim</FullPath>
+      <Name>Dim Fecha Renovación.dim</Name>
+      <FullPath>Dim Fecha Renovación.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Dim Fechas De Vencimientos De Recibos.dim</Name>
-      <FullPath>Dim Fechas De Vencimientos De Recibos.dim</FullPath>
+      <Name>Dim Fecha Vencimiento Recibo.dim</Name>
+      <FullPath>Dim Fecha Vencimiento Recibo.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Dim Monedas.dim</Name>
@@ -88,16 +88,16 @@
       <FullPath>Dim Ter.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Dim Usuarios.dim</Name>
-      <FullPath>Dim Usuarios.dim</FullPath>
+      <Name>Dim Ubicación Geográfica de Clientes.dim</Name>
+      <FullPath>Dim Ubicación Geográfica de Clientes.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Dim Ubicación Geográfica de Sucursales.dim</Name>
       <FullPath>Dim Ubicación Geográfica de Sucursales.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Dim Ubicación Geográfica de Clientes.dim</Name>
-      <FullPath>Dim Ubicación Geográfica de Clientes.dim</FullPath>
+      <Name>Dim Usuarios.dim</Name>
+      <FullPath>Dim Usuarios.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>

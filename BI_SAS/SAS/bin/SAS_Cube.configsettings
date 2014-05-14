@@ -7,16 +7,22 @@
         <ImpersonationInfo>
           <ImpersonationMode>ImpersonateAccount</ImpersonationMode>
           <Account>LARISA\LAlvarez</Account>
-          <ImpersonationInfoSecurity>PasswordRemoved</ImpersonationInfoSecurity>
+          <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
         </ImpersonationInfo>
       </DataSource>
     </DataSources>
     <Dimensions>
       <Dimension>
-        <ID>DimPóliza</ID>
+        <ID>DimCia</ID>
       </Dimension>
       <Dimension>
-        <ID>DimSucursales</ID>
+        <ID>DimMonedas</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimPlan</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimPóliza</ID>
       </Dimension>
       <Dimension>
         <ID>DimRecibos</ID>
@@ -25,52 +31,46 @@
         <ID>DimSocios</ID>
       </Dimension>
       <Dimension>
-        <ID>DimMonedas</ID>
-      </Dimension>
-      <Dimension>
-        <ID>DimCia</ID>
-      </Dimension>
-      <Dimension>
-        <ID>DimFechasDeCobrosRecibos</ID>
-      </Dimension>
-      <Dimension>
-        <ID>DimFechasDeBajas</ID>
-      </Dimension>
-      <Dimension>
-        <ID>DimFechasDeAnulacionesDeRecibos</ID>
-      </Dimension>
-      <Dimension>
-        <ID>DimFechasDeRenovaciones</ID>
-      </Dimension>
-      <Dimension>
-        <ID>DimFechasDeInscripciones</ID>
-      </Dimension>
-      <Dimension>
-        <ID>DimFechasDeFinDeVigencias</ID>
-      </Dimension>
-      <Dimension>
-        <ID>DimFechasDeVencimientosDeRecibos</ID>
+        <ID>DimSucursales</ID>
       </Dimension>
       <Dimension>
         <ID>DimTer</ID>
       </Dimension>
       <Dimension>
-        <ID>DimPlan</ID>
+        <ID>DimUsuarios</ID>
       </Dimension>
       <Dimension>
-        <ID>DimUsuarios</ID>
+        <ID>Dim Ubicacion Geografica Cliente</ID>
       </Dimension>
       <Dimension>
         <ID>Dim Ubicación Geográfica de Sucursales</ID>
       </Dimension>
       <Dimension>
-        <ID>Dim Ubicación Geográfica de Clientes</ID>
+        <ID>Dim Fecha Cobro Recibo</ID>
       </Dimension>
       <Dimension>
-        <ID>DimFechasDeNacimientos</ID>
+        <ID>Dim Fecha Anulación Recibo</ID>
       </Dimension>
       <Dimension>
-        <ID>DimFechasDe InicioDeVigencias</ID>
+        <ID>Dim Fecha Renovación</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Fecha Inscripción</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Fecha Fin Vigencia</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Fecha Nacimiento</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Fecha Inicio Vigencia</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Fecha Vencimiento Recibo</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Fecha Baja</ID>
       </Dimension>
     </Dimensions>
     <Cubes>

@@ -1,6 +1,6 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="dbf46b43-51c9-4d5d-bb97-41865204ed5e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
-  <ID>DimFechasDeCobrosRecibos</ID>
-  <Name>Dim Fechas De Cobros De Recibos</Name>
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="94b5c4ea-6ac0-4c80-ab17-dec61239ba09" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Fecha Baja</ID>
+  <Name>Dim Fecha Baja</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
   <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
   <Annotations>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-549" scrolltop="-3044" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="5027" y="13044" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1528" scrolltop="-4022" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6324" y="13044" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -19,13 +19,13 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="DimFechaCobroRecibo" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3889" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="DimFechaBaja" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3228" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
-              <ddsxmlobjectstreaminitwrapper binary="00080000310f000088130000" />
+              <ddsxmlobjectstreaminitwrapper binary="000800009c0c000088130000" />
             </control>
             <layoutobject>
               <ddsxmlobj>
-                <property name="LogicalObject" value="dbo_DimFechaCobroRecibo" vartype="8" />
+                <property name="LogicalObject" value="dbo_DimFechaBaja" vartype="8" />
               </ddsxmlobj>
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
@@ -47,11 +47,11 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>-549</Value>
+      <Value>-1528</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-3044</Value>
+      <Value>-4022</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -68,80 +68,79 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="a439226e-1aca-4e53-9557-44a4521c846f">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="fa1f3510-bdf2-49ed-95c8-55a505ab54ad">
     <DataSourceViewID>dsViewDWSAS</DataSourceViewID>
   </Source>
-  <Type>Time</Type>
-  <ErrorConfiguration dwd:design-time-name="3f8350df-6224-4f38-a0ea-b1baf8e1b2fd">
+  <ErrorConfiguration dwd:design-time-name="98fce775-9f14-4762-be21-7cd1cfbd26be">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="2443a2f8-ce15-4ff0-88db-123794c1c6b8">
-      <ID>Id Fecha Cobro Recibo</ID>
-      <Name>Id Fecha Cobro Recibo</Name>
+    <Attribute dwd:design-time-name="9dfeddb6-666d-47d1-8c41-30753ad4f4ec">
+      <ID>Id Fecha Baja</ID>
+      <Name>Id Fecha Baja</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="67f1acc4-6b2b-4a4d-84a1-43641fd201b4">
+        <KeyColumn dwd:design-time-name="47b7dc9e-8d85-4ccb-802b-7a42d255b9d9">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="3e89c845-76ce-436c-bcab-bc12d8727d08">
-            <TableID>dbo_DimFechaCobroRecibo</TableID>
-            <ColumnID>IdFechaCobroRecibo</ColumnID>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0f8134a0-b5a0-4d13-afd5-042eb726636e">
+            <TableID>dbo_DimFechaBaja</TableID>
+            <ColumnID>IdFechaBaja</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="19a37c07-ec6f-4964-86b2-003422b1e4de">
+        <AttributeRelationship dwd:design-time-name="49c4bd06-579f-4a20-b8f2-e5f809e4a2ee">
           <AttributeID>Fecha</AttributeID>
           <Name>Fecha</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="6ca37c70-0de4-44d7-9952-bc7d7e4c728d">
+        <AttributeRelationship dwd:design-time-name="3955e240-1fbe-4409-a9ed-a599c18b1f57">
           <AttributeID>Anno</AttributeID>
           <Name>Anno</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="017fc62a-32aa-46da-96b7-f0f1c0ffde2c">
+        <AttributeRelationship dwd:design-time-name="e11ae734-6692-45d2-8c70-3e82f2dab798">
           <AttributeID>Mes</AttributeID>
           <Name>Mes</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="f86b15dd-ff61-4d88-a864-6f20f88be894">
+        <AttributeRelationship dwd:design-time-name="80284585-234b-4151-97e8-31e4ccc8c509">
           <AttributeID>Semana Mes</AttributeID>
           <Name>Semana Mes</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="e992d090-4d11-49d9-87d7-4fedcdcccf9c">
+        <AttributeRelationship dwd:design-time-name="28e5ac98-6209-46f0-b287-3d344bde1971">
           <AttributeID>Semana Anno</AttributeID>
           <Name>Semana Anno</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="ca3b93db-5685-4e5a-bd9f-625ede75b5f2">
+        <AttributeRelationship dwd:design-time-name="a332ddce-c7e9-4355-8584-c1b8730c4fce">
           <AttributeID>Descripcion Mes</AttributeID>
           <Name>Descripcion Mes</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="f6584401-6857-484f-8c43-9ac90b60bec4">
+        <AttributeRelationship dwd:design-time-name="2eafca9a-b39e-41af-a0f0-46b562867939">
           <AttributeID>Descripcion Dia</AttributeID>
           <Name>Descripcion Dia</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="d4a9e5fc-dbeb-4eae-97c0-eb3399b4b727">
+        <AttributeRelationship dwd:design-time-name="96050471-30f6-46b0-8c43-d193fa2f1a8c">
           <AttributeID>Trimestre</AttributeID>
           <Name>Trimestre</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="cd354a7c-b3ce-4bcb-86a5-50cd1cb7f923">
+        <AttributeRelationship dwd:design-time-name="f559861e-9dee-4177-a413-cfc07b94ce02">
           <AttributeID>Semestre</AttributeID>
           <Name>Semestre</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="5adecd20-3094-430c-940a-f9c4f1c70515">
+        <AttributeRelationship dwd:design-time-name="b66b2979-eab8-4864-9554-20215d1c866f">
           <AttributeID>Dia Semana</AttributeID>
           <Name>Dia Semana</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="6c2f0b4c-6f00-4d75-9aad-a15d82a6f609">
+        <AttributeRelationship dwd:design-time-name="fe0df9ad-9e48-4cb3-a846-c6929ec4d08f">
           <AttributeID>Dia Mes</AttributeID>
           <Name>Dia Mes</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="09bee5b6-9f37-45d6-9a53-6e0151018030">
+        <AttributeRelationship dwd:design-time-name="6a57c0e7-140a-4abd-95c9-527b299cbecd">
           <AttributeID>Dia Anno</AttributeID>
           <Name>Dia Anno</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="dede317d-afd2-48ce-87b5-9b39b65569b0">
+        <AttributeRelationship dwd:design-time-name="3af006ba-38bd-4241-896a-5eeba6ff4e58">
           <AttributeID>Anno Mes</AttributeID>
           <Name>Anno Mes</Name>
         </AttributeRelationship>
@@ -149,187 +148,187 @@
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="74420801-0230-4a96-8995-24a4024858f1">
+    <Attribute dwd:design-time-name="dda8b303-d291-4d02-a018-94ef96cf35ed">
       <ID>Fecha</ID>
       <Name>Fecha</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="0ecd00ba-741c-4587-908f-745608bbb44a">
+        <KeyColumn dwd:design-time-name="cd0cc554-aa70-4e24-9ff7-2a6781d779ff">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="01671f5e-ddcf-4379-a921-9a1b30fdf194">
-            <TableID>dbo_DimFechaCobroRecibo</TableID>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4ebc727a-a7ba-4a20-ada3-f3034076de04">
+            <TableID>dbo_DimFechaBaja</TableID>
             <ColumnID>Fecha</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="4dd7f6d3-6ff0-4f31-b973-d1fd6e7bc94b">
+    <Attribute dwd:design-time-name="4bdb97a6-1a6d-465d-844d-165df09b2852">
       <ID>Anno</ID>
       <Name>Anno</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="af46e500-a25a-4694-a1e3-b47ea0bb9cdb">
+        <KeyColumn dwd:design-time-name="6f779d24-c0d0-42c9-bce7-0b77c358c0f3">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="3cf4da70-6687-497f-83fd-c6bbcfb53754">
-            <TableID>dbo_DimFechaCobroRecibo</TableID>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="decd1801-9b25-4e27-8e39-ae9a2d688673">
+            <TableID>dbo_DimFechaBaja</TableID>
             <ColumnID>Anno</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="5f8f05b2-f86e-4c88-bde4-81383e0fed4a">
+    <Attribute dwd:design-time-name="e9bd9551-0786-4fc8-97cc-65af5261b78b">
       <ID>Mes</ID>
       <Name>Mes</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ff888dfc-130c-4c91-a5cf-2ab6f0dc6ef6">
+        <KeyColumn dwd:design-time-name="b79786a4-1738-4441-acc0-f2472d0f1434">
           <DataType>WChar</DataType>
           <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d058a074-5ce1-40c3-9ddf-1961bf977e81">
-            <TableID>dbo_DimFechaCobroRecibo</TableID>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e84e2dfa-82cc-4995-9ac0-4665fe1eab21">
+            <TableID>dbo_DimFechaBaja</TableID>
             <ColumnID>Mes</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="38901586-ed6b-4530-a916-d5ec4ba1192f">
+    <Attribute dwd:design-time-name="afbf8d45-cda1-4366-803b-9a5b24707235">
       <ID>Semana Mes</ID>
       <Name>Semana Mes</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="40da4e36-3b7c-4997-9687-5f35e592873d">
+        <KeyColumn dwd:design-time-name="945cc665-599c-4d55-9a76-e969a2c43bf3">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="2f5289dc-4fa5-47a3-9502-d7866d8e4e87">
-            <TableID>dbo_DimFechaCobroRecibo</TableID>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b8b1efbd-fd96-41e6-bbd7-8623bb6a2308">
+            <TableID>dbo_DimFechaBaja</TableID>
             <ColumnID>SemanaMes</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="c0913f22-405d-4119-b5a3-21803ce2eba8">
+    <Attribute dwd:design-time-name="ea53c531-f3e2-47bf-a780-669577ed5e5c">
       <ID>Semana Anno</ID>
       <Name>Semana Anno</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="3e1a981e-bbcb-4c1f-8e8e-4ddc31aa2465">
+        <KeyColumn dwd:design-time-name="ed869144-da98-4dc5-8f54-29abc8fe30ad">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d84954d4-730b-47ae-a4f9-965b724504eb">
-            <TableID>dbo_DimFechaCobroRecibo</TableID>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="86fd0ae8-31b2-44c5-9338-c4462b5765a8">
+            <TableID>dbo_DimFechaBaja</TableID>
             <ColumnID>SemanaAnno</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="bed26cf5-fd36-4be5-9397-186ac9301444">
+    <Attribute dwd:design-time-name="06e73968-7a81-4f62-b3e3-1f20932a9161">
       <ID>Descripcion Mes</ID>
       <Name>Descripcion Mes</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="84ae8d39-c9a5-4f1e-a59d-739de7dc9722">
+        <KeyColumn dwd:design-time-name="cdc5bcf8-9f74-4917-b68f-c6b47a7a6203">
           <DataType>WChar</DataType>
           <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="bc4a0e09-1f96-4b05-8ec9-16f79ec2069f">
-            <TableID>dbo_DimFechaCobroRecibo</TableID>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="82fbdff1-8224-4117-8fae-f830bea579b7">
+            <TableID>dbo_DimFechaBaja</TableID>
             <ColumnID>DescripcionMes</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="e73b9f28-95aa-4dc2-8590-bd4a32399854">
+    <Attribute dwd:design-time-name="00f8164e-dd4a-4123-b3cc-ae56457a955d">
       <ID>Descripcion Dia</ID>
       <Name>Descripcion Dia</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="0b8d23f2-4b1a-4f96-b24f-81618b2bf70c">
+        <KeyColumn dwd:design-time-name="4d63ce52-bd21-441b-8efd-8d03f80adef1">
           <DataType>WChar</DataType>
           <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="55f4bf3e-8d78-40cf-a117-ff506dafad36">
-            <TableID>dbo_DimFechaCobroRecibo</TableID>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="008171e9-79bf-4fae-98cb-e790c2647dd4">
+            <TableID>dbo_DimFechaBaja</TableID>
             <ColumnID>DescripcionDia</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="d070148f-1101-4fa6-b396-d9ce0e3ef5c9">
+    <Attribute dwd:design-time-name="4c563803-350b-43ac-8cf7-61bf3c06a0f2">
       <ID>Trimestre</ID>
       <Name>Trimestre</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e4c36869-66b2-4a48-becd-f5c0239232ab">
+        <KeyColumn dwd:design-time-name="261ad735-02e8-443c-9687-b5ccca67a2a6">
           <DataType>WChar</DataType>
           <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d8945ecf-b925-4901-b919-1cd35416923d">
-            <TableID>dbo_DimFechaCobroRecibo</TableID>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="84a6196e-8ee4-4d3e-989f-882ae1648049">
+            <TableID>dbo_DimFechaBaja</TableID>
             <ColumnID>Trimestre</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="359da6cc-9d11-4ca4-996e-c4237eb0e37d">
+    <Attribute dwd:design-time-name="5a75abd8-ac42-4cfd-844a-e8aed7224a1d">
       <ID>Semestre</ID>
       <Name>Semestre</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="5fe63a93-8fe0-49b7-92fb-71bf44a052ba">
+        <KeyColumn dwd:design-time-name="4e01bf6f-e80c-4cec-bd9c-054a0daceb0c">
           <DataType>WChar</DataType>
           <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="68da6974-64b0-4595-9380-ae51e96144cc">
-            <TableID>dbo_DimFechaCobroRecibo</TableID>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6d179f70-8b1d-4c59-b0af-4e291e189e15">
+            <TableID>dbo_DimFechaBaja</TableID>
             <ColumnID>Semestre</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="3a07e297-4bec-49dd-aa4a-84fea8941e19">
+    <Attribute dwd:design-time-name="c697f26c-63dd-4de3-86a7-a66fa7d395c7">
       <ID>Dia Semana</ID>
       <Name>Dia Semana</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="3e47b63d-637e-4d40-8f58-beef6a69146c">
+        <KeyColumn dwd:design-time-name="5dccc843-6b6d-4cec-8a34-8eff005cb2bb">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="170b5fa1-bd73-427b-95b9-6cb3cae7ce15">
-            <TableID>dbo_DimFechaCobroRecibo</TableID>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="912460c0-cbe3-4c0b-b07f-1b2932571ef2">
+            <TableID>dbo_DimFechaBaja</TableID>
             <ColumnID>DiaSemana</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="ab56807e-59c4-4366-987e-1c3f8cb0f24e">
+    <Attribute dwd:design-time-name="92558b4a-514a-4d6a-9bce-3cf95595d784">
       <ID>Dia Mes</ID>
       <Name>Dia Mes</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="4e6b9a17-cbe6-4d76-a3cd-6879f699bbd9">
+        <KeyColumn dwd:design-time-name="50614a63-2f59-4388-b022-1caade777f25">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a6fc169d-14c9-4fca-a310-0e074e446668">
-            <TableID>dbo_DimFechaCobroRecibo</TableID>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d0384a4c-7040-437a-be26-7e5c855dbcb1">
+            <TableID>dbo_DimFechaBaja</TableID>
             <ColumnID>DiaMes</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="ac6ea08a-3b24-4382-815c-cea4ced2ecba">
+    <Attribute dwd:design-time-name="c824d689-7d82-4ce8-944e-f60176383d10">
       <ID>Dia Anno</ID>
       <Name>Dia Anno</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="366dd148-61fc-4a79-825b-154ec0e9c96a">
+        <KeyColumn dwd:design-time-name="1ba52c6e-23d0-45ca-83b6-11ffded86f5c">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="de4ad028-7af2-4633-a242-151a5d811891">
-            <TableID>dbo_DimFechaCobroRecibo</TableID>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="aef1daf3-c2f2-49d0-b5b6-9fba3e8eea5e">
+            <TableID>dbo_DimFechaBaja</TableID>
             <ColumnID>DiaAnno</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="3778be35-b63f-4753-bb6d-3a73e8d11a82">
+    <Attribute dwd:design-time-name="362f8100-2e7b-48b1-a04f-6c6959b8ddae">
       <ID>Anno Mes</ID>
       <Name>Anno Mes</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="70a1be87-8519-49fa-bdc9-d552729e251f">
+        <KeyColumn dwd:design-time-name="f76573ef-aa31-4f1b-ae85-85ce12073819">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a69e8a19-729f-4363-b045-096db45d0a65">
-            <TableID>dbo_DimFechaCobroRecibo</TableID>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1a180f6c-d638-4192-887a-46c32e91d6fc">
+            <TableID>dbo_DimFechaBaja</TableID>
             <ColumnID>AnnoMes</ColumnID>
           </Source>
         </KeyColumn>

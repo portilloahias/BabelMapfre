@@ -19,7 +19,7 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>5HkFlQPTSdMnLnDwskT9WQ==4/22/2014 2:07:13 PM4/22/2014 8:43:27 AM</TimeStamp>
+        <TimeStamp>+hlDjZSeQByotD3cmDmCVA==5/12/2014 8:48:33 AM4/22/2014 8:43:27 AM</TimeStamp>
         <ID>
           <String>dsDWSAS</String>
         </ID>
@@ -33,16 +33,30 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>Oirr/vnyTqlGAuilr2MkBg==4/22/2014 1:55:53 PM4/22/2014 9:26:45 AM</TimeStamp>
+        <TimeStamp>OMZfHs73sskdPt5nHvmrZQ==4/22/2014 10:04:22 AM4/22/2014 9:30:23 AM</TimeStamp>
         <ID>
-          <String>DimPóliza</String>
+          <String>DimCia</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>yk+gVtgwz1mhDfUPzM5MVA==4/22/2014 1:59:53 PM4/22/2014 9:27:29 AM</TimeStamp>
+        <TimeStamp>gB9oezvW5/CwjIYKXhFFrg==4/22/2014 1:59:53 PM4/22/2014 9:30:03 AM</TimeStamp>
         <ID>
-          <String>DimSucursales</String>
+          <String>DimMonedas</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>RfpTxCxMaLiqGChmf+BgxA==4/22/2014 1:55:51 PM4/22/2014 9:38:56 AM</TimeStamp>
+        <ID>
+          <String>DimPlan</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Oirr/vnyTqlGAuilr2MkBg==4/22/2014 1:55:53 PM4/22/2014 9:26:45 AM</TimeStamp>
+        <ID>
+          <String>DimPóliza</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
@@ -61,79 +75,16 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>gB9oezvW5/CwjIYKXhFFrg==4/22/2014 1:59:53 PM4/22/2014 9:30:03 AM</TimeStamp>
+        <TimeStamp>yk+gVtgwz1mhDfUPzM5MVA==4/22/2014 1:59:53 PM4/22/2014 9:27:29 AM</TimeStamp>
         <ID>
-          <String>DimMonedas</String>
+          <String>DimSucursales</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>OMZfHs73sskdPt5nHvmrZQ==4/22/2014 10:04:22 AM4/22/2014 9:30:23 AM</TimeStamp>
-        <ID>
-          <String>DimCia</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>pv8G4ksKITKVGdIR1Xjlyw==4/22/2014 10:53:21 AM4/22/2014 9:33:30 AM</TimeStamp>
-        <ID>
-          <String>DimFechasDeCobrosRecibos</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>Un9q0MX+H2NfUhWPlwzJDQ==4/22/2014 11:34:04 AM4/22/2014 9:33:56 AM</TimeStamp>
-        <ID>
-          <String>DimFechasDeBajas</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>BhgEAgUskq2pFK+te4D1XQ==4/22/2014 11:31:19 AM4/22/2014 9:34:25 AM</TimeStamp>
-        <ID>
-          <String>DimFechasDeAnulacionesDeRecibos</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>P/uoofq64KZywnnH4OV+FQ==4/22/2014 10:54:09 AM4/22/2014 9:35:01 AM</TimeStamp>
-        <ID>
-          <String>DimFechasDeRenovaciones</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>hiV17y1DMh1PcV5eHy4KuA==4/22/2014 10:54:09 AM4/22/2014 9:35:25 AM</TimeStamp>
-        <ID>
-          <String>DimFechasDeInscripciones</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>+JaLNcict+xz0XXp2e3KrA==4/22/2014 10:53:30 AM4/22/2014 9:35:51 AM</TimeStamp>
-        <ID>
-          <String>DimFechasDeFinDeVigencias</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>hCV73y2KSqS2JRG3c5x4BA==4/22/2014 11:39:30 AM4/22/2014 9:37:27 AM</TimeStamp>
-        <ID>
-          <String>DimFechasDeVencimientosDeRecibos</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>TFqNEhtcXQpvXBT1etLvvw==4/22/2014 2:15:33 PM4/22/2014 9:38:27 AM</TimeStamp>
+        <TimeStamp>G1NBotfjusUU82sSmCY0iQ==5/3/2014 10:47:53 AM4/22/2014 9:38:27 AM</TimeStamp>
         <ID>
           <String>DimTer</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>RfpTxCxMaLiqGChmf+BgxA==4/22/2014 1:55:51 PM4/22/2014 9:38:56 AM</TimeStamp>
-        <ID>
-          <String>DimPlan</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
@@ -145,35 +96,84 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>2TCtQBOTVQn7QlSx+6UIIw==4/22/2014 1:59:53 PM4/22/2014 10:01:32 AM</TimeStamp>
+        <TimeStamp>4mXrsJtyHYT11UdGVZh8Bw==5/5/2014 10:10:47 AM5/5/2014 10:09:34 AM</TimeStamp>
+        <ID>
+          <String>Dim Ubicacion Geografica Cliente</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>+se5hSBN+43lflEGv1D0pw==5/5/2014 10:11:50 AM5/5/2014 10:11:21 AM</TimeStamp>
         <ID>
           <String>Dim Ubicación Geográfica de Sucursales</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>B/FgnWiibMxYQY6FGnVbsA==4/22/2014 1:59:53 PM4/22/2014 10:02:01 AM</TimeStamp>
+        <TimeStamp>KQAAzJI+nq8wsVAXRQlmog==5/14/2014 10:46:44 AM5/14/2014 10:40:16 AM</TimeStamp>
         <ID>
-          <String>Dim Ubicación Geográfica de Clientes</String>
+          <String>Dim Fecha Cobro Recibo</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>H6YPKU5lWmK6CjcoRxfEDA==4/22/2014 11:25:24 AM4/22/2014 9:36:18 AM</TimeStamp>
+        <TimeStamp>+GrmuQOuuX+fWvlahdxdrg==5/14/2014 10:46:45 AM5/14/2014 10:40:54 AM</TimeStamp>
         <ID>
-          <String>DimFechasDeNacimientos</String>
+          <String>Dim Fecha Anulación Recibo</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>hsv/WOycF8+ZLQf6QbsG1Q==4/22/2014 11:31:35 AM4/22/2014 9:36:46 AM</TimeStamp>
+        <TimeStamp>80bzwNTBs62uTTTPD91xjg==5/14/2014 10:46:45 AM5/14/2014 10:41:45 AM</TimeStamp>
         <ID>
-          <String>DimFechasDe InicioDeVigencias</String>
+          <String>Dim Fecha Renovación</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Gqo4DUyGFE9HbFHkEXEpXw==5/14/2014 10:46:45 AM5/14/2014 10:42:27 AM</TimeStamp>
+        <ID>
+          <String>Dim Fecha Inscripción</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>70xqDaVfaUUG/u+A0evgog==5/14/2014 10:46:45 AM5/14/2014 10:43:01 AM</TimeStamp>
+        <ID>
+          <String>Dim Fecha Fin Vigencia</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>8c79lSGSMbMa4nZ4g45BLw==5/14/2014 10:46:45 AM5/14/2014 10:43:22 AM</TimeStamp>
+        <ID>
+          <String>Dim Fecha Nacimiento</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>8Nc4UYHxkUrBKj6KaDRF0w==5/14/2014 10:46:45 AM5/14/2014 10:43:54 AM</TimeStamp>
+        <ID>
+          <String>Dim Fecha Inicio Vigencia</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Nv4cgxi5sgRmk0XECP9cDA==5/14/2014 10:46:45 AM5/14/2014 10:44:23 AM</TimeStamp>
+        <ID>
+          <String>Dim Fecha Vencimiento Recibo</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>kRJA5x8HUYJjRrlbqztExA==5/14/2014 10:47:30 AM5/14/2014 10:46:44 AM</TimeStamp>
+        <ID>
+          <String>Dim Fecha Baja</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>SUEiAnLs8Q3QjNi9kW6rXQ==4/22/2014 2:00:01 PM4/22/2014 1:59:52 PMudFjd4RobRzEDG4gzPNl8A==4/22/2014 1:59:52 PM4/22/2014 1:59:52 PM</TimeStamp>
+        <TimeStamp>/BBDn+nN04A3QX8R68bkNA==5/14/2014 10:48:33 AM4/22/2014 1:59:52 PMudFjd4RobRzEDG4gzPNl8A==4/22/2014 1:59:52 PM4/22/2014 1:59:52 PM</TimeStamp>
         <ID>
           <String>cubeDWSASRegional</String>
         </ID>
@@ -190,5 +190,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2014-04-22T20:15:40.916667Z</LastDeployed>
+  <LastDeployed>2014-05-14T16:48:47.856667Z</LastDeployed>
 </DeploymentSnapshot>

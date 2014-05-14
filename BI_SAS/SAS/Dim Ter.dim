@@ -1,14 +1,14 @@
 ﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="fb45a599-ac59-4869-abf5-d04702e55d5d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>DimTer</ID>
   <Name>Dim Ter</Name>
-  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="4" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-231" scrolltop="-97" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6376" y="13044" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="8" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-231" scrolltop="-97" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="5741" y="13044" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -19,7 +19,7 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="DimFechaNacimiento" left="232" top="7400" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3651" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="DimFechaNacimiento" left="232" top="7400" logicalid="4" controlid="1" masterid="0" hint1="0" hint2="0" width="3651" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="00080000430e000088130000" />
             </control>
@@ -30,7 +30,7 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="DimTer" left="20" top="0" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="4075" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="DimTer" left="20" top="0" logicalid="5" controlid="2" masterid="0" hint1="0" hint2="0" width="4075" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="00080000eb0f000088130000" />
             </control>
@@ -41,7 +41,7 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="1658" top="4700" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1658" top="4700" logicalid="6" controlid="3" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -95,7 +95,7 @@
       <Value>100</Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
   <State>Unprocessed</State>
   <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="062de937-ea8a-4a7f-b04a-fe437283213a">
     <DataSourceViewID>dsViewDWSAS</DataSourceViewID>
@@ -124,30 +124,6 @@
         <AttributeRelationship dwd:design-time-name="3577d437-e140-4a98-93d4-1273035ad0ca">
           <AttributeID>Tipo Documento</AttributeID>
           <Name>Tipo Documento</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="3368e0cb-4469-4a95-8be4-2a09b10b5957">
-          <AttributeID>Numero Documento</AttributeID>
-          <Name>Numero Documento</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="5bc956c3-0572-4541-98f3-bb3089a91c12">
-          <AttributeID>Nombre Base1</AttributeID>
-          <Name>Nombre Base1</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="cca2d315-7369-48f1-956d-7b30d6111c5e">
-          <AttributeID>Nombre Base2</AttributeID>
-          <Name>Nombre Base2</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="4c6d55cc-6d33-4f67-b00b-e704a6de2558">
-          <AttributeID>Apellido1</AttributeID>
-          <Name>Apellido1</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="080c2e5b-da54-43e7-914e-aef9d54771dd">
-          <AttributeID>Apellido2</AttributeID>
-          <Name>Apellido2</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="85695a9f-2bc1-4ef8-9de7-7bf89892e476">
-          <AttributeID>Apellido Casada</AttributeID>
-          <Name>Apellido Casada</Name>
         </AttributeRelationship>
         <AttributeRelationship dwd:design-time-name="5c7cea34-dd4d-448f-b076-af31a47c6386">
           <AttributeID>Codigo Sexo</AttributeID>
@@ -195,96 +171,6 @@
           <Source xsi:type="ColumnBinding" dwd:design-time-name="0b722250-c1b5-4c5d-9e3b-5606bedc910a">
             <TableID>dbo_DimTer</TableID>
             <ColumnID>TipoDocumento</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="5eec3245-4841-4a34-8d71-7fe8afde42c9">
-      <ID>Numero Documento</ID>
-      <Name>Numero Documento</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="4440806c-f2e7-470e-a008-af28614961e7">
-          <DataType>WChar</DataType>
-          <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7267bc51-d39b-4f09-b035-6ef6c31c70ac">
-            <TableID>dbo_DimTer</TableID>
-            <ColumnID>NumeroDocumento</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="38bf3ff9-4ee8-4a9b-b02f-c83da5b8204f">
-      <ID>Nombre Base1</ID>
-      <Name>Nombre Base1</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="e913d503-6691-4295-bb64-881349d56dfa">
-          <DataType>WChar</DataType>
-          <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="edd980f1-2eea-479e-b0d2-dbb41a42aa70">
-            <TableID>dbo_DimTer</TableID>
-            <ColumnID>NombreBase1</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="94da0c0a-0565-42b0-bc30-63a3b9951da6">
-      <ID>Nombre Base2</ID>
-      <Name>Nombre Base2</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="7d581241-64fc-4c09-b48f-2d47189af88f">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="9c6be960-392e-4b38-a64e-9f5e79cd2f1f">
-            <TableID>dbo_DimTer</TableID>
-            <ColumnID>NombreBase2</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="6960b83e-ef69-4b0d-9f3d-f57ffb88a4dd">
-      <ID>Apellido1</ID>
-      <Name>Apellido1</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="7c476d57-b675-4222-a36c-85689e63d4c6">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="949813ea-d8ae-4ec8-8cc4-d29725564509">
-            <TableID>dbo_DimTer</TableID>
-            <ColumnID>Apellido1</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="8af4ebba-471c-4c5a-9161-25aa90c924dc">
-      <ID>Apellido2</ID>
-      <Name>Apellido2</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="46793fe5-6379-4e16-b949-28aaf3bed429">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f74f4870-6ba1-4271-93e3-8a07964cf838">
-            <TableID>dbo_DimTer</TableID>
-            <ColumnID>Apellido2</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="221c3a51-8806-4296-9c45-42b76eb82979">
-      <ID>Apellido Casada</ID>
-      <Name>Apellido Casada</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="0b76e447-ec48-4129-924d-1fd6084bf18d">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="bc6d2250-8383-471b-83f8-7e42a0835aeb">
-            <TableID>dbo_DimTer</TableID>
-            <ColumnID>ApellidoCasada</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
